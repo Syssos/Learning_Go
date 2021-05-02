@@ -1,5 +1,6 @@
 # 0x00_Hello_World
-### First steps into Go. Below are descriptions of each one of the files, and why they are here. I would like to note, that the purpose of these files are for visual representation of ideas or topics that I find important. Some of the files are used as examples, and are not how I would write code, but representations of what I should ensure I either stay away from or keep note of, as to not have faulty or improper code when in a development environment. I have experiance in C and Python going into this so I imagine there will be some simularities to the languages I am already familiar with but Will use to following pages to outline the those simulatities and differences.
+### Gettings started with Go
+Before I get into the description of the code you see above, and below, I would like to mention that this is not my first programming langauge, so some of the things I touch on are a little more advanced then basic string printing but because it fits in-with the catagory I would like to mention them here.
 
 ## Hello_World
 This File was used to get me started. I used it to find out how to run, and compile the code. As well as outline essential components I will need to understand such as packages, and imports.
@@ -39,11 +40,39 @@ fmt.Printf("%v, it works!", var)
 Above we see the printf function being passed a string, and a variable name. Within the string there is a special character combonation, "%v". This is simuilar to how C denoted a verb within a string. The Percent sign (%) tells printf that this is the location to put the variable, and "v" which tells print to print the data in the default format. If we were to replace the "v" with something like a "p" then we would get a different value like the location in memory in which that variable is saved.
 
 ## Hello_Afar
-Now that we know how to print variables and strings to the screen. Lets take a look at how we can use this in a practical sense. In this file we take a look at how to print stings, and variables in a function outside of main.
+This file contains multiple new conscepts outside of just string printing, Some of those I will highlight brefiely so any person new to programming can try to follow along.
 
-The main function in this file is used for 2 things, to declare a first and last name variable as well as call the function we create below that one. In the decloration of the function we create you will notice the word string next to F, and L. This tells the compiler which dataype the function expects. If we call this function with a variable other then a string we can get an error. The function call and decloration of the variables are the only real difference between this file and the Hello_V file. The Print statement uses verbs just like in Hello_V however they are declared and come from a place outside of the function it is called.
+```go
+Firstname := "James"
+```
+The First concept is variable creation, Here we see that I declare the string "James" to the variable Firstname. A string is a dataype and is basically just a collection of characters, like a word, or sentance. We do that with ":=". I will touch more on this in the datatypes section. For now just now its how we set variables.
+
+```go
+func Greeting_user(F string, L string) {...}
+```
+The Second concept is creating a new function. This is another concept that will be reviewed later on. This is simular to the main function in the sense of it being a collection of code that runs when called. The same way the main function is called, we can call a function we create from within main itself. This allows us to keep code inside of main condensed. We see that it takes to arguments, F and L, and they are both strings. This means when we call the function we can either pass it 2 strings or 2 variables of type string.
+```go
+Greet_user("James", "Dean")
+```
+Strings
+```go
+Greet_user(Firstname, Lastname)
+```
+variables
+We can see the variables dont have quotes. Meaning the compiler will look for a varaible with that name rather then passing the strings as is.
+
+Aside from the new topics the function actually that prints the string is the same as the function from Hello_V, just taking new arguments.
 
 ## Hello_Pointer, Hello_Hijack, Hello_Proper
-Because pointers are going to be refrenced in a later section this will not be gone over in to much detail. However while googling how to pass strings to a function in Go I noticed others metioned using a pointer, and therefore I wanted to make note of them and using them in a way that does not result in data overwriting. This is because pointers are the location in memory for the given variable and not the data the variable holds. These 3 files indicate how pointers are passed to a function "Using & to represent the address, and using the * to derefrence the pointer passed in."
+If you are new to programming or looking at how to print a string, these files will not be needed. The point of these files were to show the use of pointers in Go. This topic will be touched on later on, the purpose of them being here is to show another method of passing strings through a function, and then demenstrate why it may, or may not, be useful in a project.
 
-If you are experianced in C or other low level programming languages you may be familur with pointers. If you are new to pointers dont worry to much if you dont understand whats going on just yet. Just know that if you modify the value of a derefrenced pointer anywhere in the code it is passed to, then it will be modified everywhere in the code.
+A pointer is a refrence to a variables location in memory. These are denoted with &, they are derefrenced with the *, they will apear in the code as shown below
+```go
+&Firstname
+```
+Above will give us the location in memory of the varaiable, not the value the varaible holds.
+
+In order to access the information at the address in memory we need to derefrence that variable, or in leiman terms, tell the compiler "I see where your located, but what value does that location hold." We use the "*"
+```go
+*Fristname
+```

@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 
-	Firstname := "Alexis"
-	Lastname := "Texas"
+	Firstname := "James"
+	Lastname := "Dean"
 
 	Greet_user(Firstname, Lastname)
 }

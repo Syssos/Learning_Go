@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	Testvar := "Yup"
+	Testvar := "Hello"
 
-	fmt.Printf("%v, It Works!", Testvar)
+	fmt.Printf("%v, World!", Testvar)
 }

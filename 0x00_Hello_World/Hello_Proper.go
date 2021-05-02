@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 
-	Firstname := "Alexis"
-	Lastname := "Texis"
+	Firstname := "James"
+	Lastname := "Dean"
 
 	Greet_user(Firstname, Lastname)
 
@@ -14,7 +14,7 @@ func main() {
 
 func Greet_user(F string, L string) {
 
-	F = "Riley"
-	L = "Reid"
+	F = "Timmy"
+	L = "Turner"
 	fmt.Printf("Hello %v %v, How are you?\n", F, L)
 }
