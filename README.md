@@ -27,6 +27,7 @@ For more installation on installing Go from the source, please refer to their do
 https://golang.org/doc/install/source
 
 1. Extract the information within the downloaded archive file downloaded from the Go website, to /usr/local this should look like ``` go[version #].linux-amd64.tar.gz ```
+
 	** Important: ** Files stored in the location /usr/local/go will need to be removed or overwritten if they exist to ensure the installation has no errors. To ensure the location is cleared and no files are there we will remove that file and then extract the tar.gz file
 
 	\* Note that in this case I am using the Go version 1.16.3 tar.gz at the time of creating this, so the file name may need to be replaced if you copy and paste this snippet
@@ -43,6 +44,7 @@ https://golang.org/doc/install/source
 	Due to the method of adding go to the path, the changes will not take affect until a reboot, to have them take affect immediatly run the export command from the command line.
 
 3. Ensure Go is installed and refrenced correctly in the PATH by getting the go version with the command below.
+	
 	``` go version ```
 
 	This should return something along the lines of "go version go1.16.3 linux/amd64"
