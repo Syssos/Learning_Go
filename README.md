@@ -4,17 +4,18 @@ Go is an extremely powerful langauge to have in your toolbelt as a developer on 
 
 I could turn this readme into a list with all the reasons Go is a good langauge to learn, but for the sake of time and to get back to learning I'll just move along. In the following directories are Go scripts, grouped together by category, I used to learn the langauge. Alongside anther readme describing the point of each script.
 
- - [Download](#heading)
- - [Installation](#heading-1)
- - [Directories](#heading-2)
- 	* [0x00_Hello_World](#sub-heading)
- 	* [0x01_Variables](#sub-heading-1)
+ - [Download](#Download)
+ - [Installation](#Installation)
+ - [Directories](#Directories)
+ 	* [0x00_Hello_World](#0x00_Hello_World)
+ 	* [0x01_Variables](#0x01_Variables)
 
 ## Download 
 
 ## Installation
 
 ## Directories
+
 ### 0x00_Hello_World
 This Directory is dedicated to learning the basics of Go. I Learned how to run and build the code as well as the basic syntax and file structure. I also looked into printing strings to the standard output as this will be used to show everything we are doing as we learn and progress.
 
