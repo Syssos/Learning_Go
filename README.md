@@ -6,13 +6,50 @@ I could turn this readme into a list with all the reasons Go is a good langauge 
 
  - [Download](#download)
  - [Installation](#installation)
+ 	* [Linux](#linux)
+ 	* [Windows](#windows)
+ 	* [Mac](#mac)
  - [Directories](#directories)
  	* [0x00_Hello_World](#0x00_hello_world)
  	* [0x01_Variables](#0x01_variables)
 
-## Download 
+## Download
+
+https://golang.org/dl/
+
+The above link will bring you to the downloads page for Go, in the section below I will highlight some common OS installations such as Linux, Windows and Mac. Make sure the version you download is compatible with your OS.
 
 ## Installation
+
+### Linux
+** Please note, this is for common distributions of linux such as Ubuntu, using the linux precompiled installer **
+For more installation on installing Go from the source, please refer to their documentation
+https://golang.org/doc/install/source
+
+1. Extract the information within the downloaded archive file downloaded from the Go website, to /usr/local this should look like ``` go[version #].linux-amd64.tar.gz ```
+	** Important: ** Files stored in the location /usr/local/go will need to be removed or overwritten if they exist to ensure the installation has no errors. To ensure the location is cleared and no files are there we will remove that file and then extract the tar.gz file
+
+	\* Note that in this case I am using the Go version 1.16.3 tar.gz at the time of creating this, so the file name may need to be replaced if you copy and paste this snippet
+	``` sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.16.3.linux-amd64.tar.gz ```
+
+2. Now that the Go files are in the local directory we need to add the PATH environment variable. To do this open either $HOME/.profile (\~/.prfile) or /etc/profile in a text editor of your choice and append the following line to the end of the file.
+	
+	```	export PATH=$PATH:/usr/local/go/bin	```
+
+	or you can run the command below to echo and append the line.
+	
+	```	echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.profile ```
+
+	Due to the method of adding go to the path, the changes will not take affect until a reboot, to have them take affect immediatly run the export command from the command line.
+
+3. Ensure Go is installed and refrenced correctly in the PATH by getting the go version with the command below.
+	``` go version ```
+
+	This should return something along the lines of "go version go1.16.3 linux/amd64"
+
+### Windows
+
+### Mac
 
 ## Directories
 
