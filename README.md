@@ -23,6 +23,7 @@ The above link will bring you to the downloads page for Go, in the section below
 
 ### Linux
 **Please note, this is for common distributions of linux such as Ubuntu, using the linux precompiled installer**
+
 For more installation on installing Go from the source, please refer to their documentation
 https://golang.org/doc/install/source
 
@@ -51,8 +52,26 @@ https://golang.org/doc/install/source
 	This should return something along the lines of "go version go1.16.3 linux/amd64"
 
 ### Windows
+The windows installation process is fairly simple. In order to get started make sure you have the .msi file, available from the link under the "Download" section.
+
+1. Open the MSI file, this will open up a generic windows installation windows. The default location of install will be in the C:\\Windows\\Program Files (x86) or C:\\Windows\\Program Files directory. You can change that if needed. Please note that any open command prompts will need to be closed and re-opened for enviornment variables to update.
+
+2. To ensure the installation went smoothly, go into a Command Prompt Window and run the following command
+
+``` go version ```
+
+If go is installed correctly the correct version should be printed in the cmd window
 
 ### Mac
+The Mac install of go does essentially the same thing as the linux install, however it is automated for the most part.
+
+1. The Mac download file from the go website should be of type .pkg, Once it is download open the package file and follow the prompts that appear, just like in linux the install should end up in the /usr/local/go directory and the installer should ad the enviornment path to the same location.
+
+2. To ensure the install worked open up a command prompt and enter the following command
+
+``` go version ```
+
+This should return the current version of go installed.
 
 ## Directories
 
