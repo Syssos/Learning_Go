@@ -4,11 +4,17 @@ Go is an extremely powerful langauge to have in your toolbelt as a developer on 
 
 I could turn this readme into a list with all the reasons Go is a good langauge to learn, but for the sake of time and to get back to learning I'll just move along. In the following directories are Go scripts, grouped together by category, I used to learn the langauge. Alongside anther readme describing the point of each script.
 
+ - [Overview](#learning-go)
  - [Download](#download)
  - [Installation](#installation)
  	* [Linux](#linux)
  	* [Windows](#windows)
  	* [Mac](#mac)
+ - [Getting Started](#getting-started)
+ 	* [Enviornment](#enviornment-setup)
+ 	* [Code Execution](#code-execution)
+ 		- [Running](#running)
+ 		- [Compiling](#compiling)
  - [Directories](#directories)
  	* [0x00_Hello_World](#0x00_hello_world)
  	* [0x01_Variables](#0x01_variables)
@@ -72,6 +78,50 @@ The Mac install of go does essentially the same thing as the linux install, howe
 ``` go version ```
 
 This should return the current version of go installed.
+
+## Getting Started
+After we have Go installed we need to have a couple things initialized before we can get into actually writing code. Below I will go over how I initialized the enviornment for this repository, note that there will be a section dedicated to understanding this further when we get into working with external packages. This will cover setting up a local module in order to run the code we write.
+
+### Enviornment Setup
+The first thing we need to do is create a location in which we will have the project source code. Lets look at the current repository for example. The Root is "Learing_Go", and our first directory is "0x00_Hello_World"
+
+Now that we have those 2 folders the directory tree should look like it does below
+
+Learning_Go
+	\\--- 0x00_Hello_World
+
+Now cd to the parent directory of "Learning Go", this is where we will initialize the Go module. We can do this by running the following command
+
+```
+go mod init Learning_Go
+```
+
+This command is doing some very important things as far setting up an enviornment. After running the command you will notice a "go.mod" file was created in the current directory. This file is super important to Go as it is what manages the dependencies the package you are creating requires. For now however our code only requires built in packages(ie "fmt") so the generic go.mod file will work for us at the moment.
+
+Once the go.mod file is created we should be able to start writing code and storing it in the first folder or in other folders as we make them. For now to keep things simple we will cover a little more on how Go operates before we cover this topic in its full extent.
+
+### Code Execution
+Once we have the enviornment setup we can start focusing on running the code we write. Lets take a look at running the "Hello_World.go" script, inside the "0x00_Hello_World" directory.
+
+Go is an interpreted and compilied langauge, this means we can either run the go script through an interpreter written in Go, or we can compile the code into a binary and execut the file.
+
+Lets start with running a script.
+
+#### Running
+To run a simple Go script we will make use of the ``` go run [Path/to/file]``` command. This command will tell Go to start an interpreter and execute the script passed in. This is super useful when it comes to testing changes, or finding bugs within a script.
+
+For more information on this command check out the link below
+
+https://golang.org/cmd/go/#hdr-Compile_and_run_Go_program
+
+#### Compiling
+Compiling the script will create an executable file. On windows this will generate an EXE and on linux and mac it will generate an ELF file. To compile the script we will use a command close to running however the second argument goes from run to build.
+
+```
+go build [path/to/file]
+```
+
+This will create and place a new executable with the same file name as the script in the current directory.
 
 ## Directories
 
