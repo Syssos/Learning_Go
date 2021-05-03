@@ -8,3 +8,6 @@ Each Directory will have a topic Discussed, which will be outlined below, as dir
 
 ##0x00_Hello_World
 This Directory is dedicated to learning the basics of Go. I Learned how to run and build the code as well as the basic syntax and file structure. I also looked into printing strings to the standard output as this will be used to show everything we are doing as we learn and progress.
+
+##0x01_Variables
+This Directory is all about varibales and datypes in Go. There are a few that are different from C that I would like to highlight, as well as cover the basics of how go handles common datatypes.
