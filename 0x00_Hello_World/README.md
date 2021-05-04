@@ -66,7 +66,7 @@ In 01_Verbs we saw that we can use %v to insert one string into another. What if
 
 When using the printf function we can use as many verbs as we'd like, however we need to make sure we pass the same number of arguments, to little or to many arguments can result in an error, an easier way to look at what is going on is if we use "sudo code" or "Fake code" to better explain what is happening
 ```
-("hello <variable_1> <varibal_2>, How are you?", variable_1, varibal_2)
+("hello <variable_1> <variable_2>, How are you?", variable_1, variable_2)
 ```
 Above is a line of code that wouldn't exactly work if we wrote it in the Go script, but it helps breakdown what is happening a little better, there are 3 arguments being passed to printf, the first is the string we want to print, and as we can see, each value afterthat will correspond with a spot in the string we want to print.
 
