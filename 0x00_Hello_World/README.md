@@ -1,78 +1,81 @@
 # 0x00_Hello_World
-### Gettings started with Go
-Before I get into the description of the code you see above, and below, I would like to mention that this is not my first programming langauge, so some of the things I touch on are a little more advanced then basic string printing but because it fits in-with the catagory I would like to mention them here.
+## Gettings started 
 
-## Hello_World
-This File was used to get me started. I used it to find out how to run, and compile the code. As well as outline essential components I will need to understand such as packages, and imports.
+Each one of the files above has a simlilar job, print some data. How we do that is different in each file. The goal here is to have a solid understanding of printing data to the screen before movinbg on. This is because printing data to the screen(or the "standard output") is one of the most important features in most programming langauges. We will use print functions all over the place, and can they be your best friend while debugging issues in more complex scripts.
+
+Okay so we have an idea of what we want our code to do,  but how do we get started? Well lets start at the top of the page and work our way down.
+
+Each one of the files above will start with the same 3 lines so lets review those lines to have a better understanding.
 
 ```go
 package main
 ```
-
-The line above refrence's the current package in which we are working, because this is not an external module I am creating I will be using the main package.
+The line above is a manditory line in Go. This is because every Go script will start within the main package. The scripts we will start off writing are by no means complex enough to have real value in importing into another project, so for now we will just need to know that every file will start with this line. When the Repository is finished and all the steps are added, I will create an example project demonstrating and explaining in greater detail how to create a package and set it up it in a way others can utilize.
 
 ```go
 import "fmt"
 ```
 
-The import line is importing the format package, this package is what gives us access to ```Println()``` and ```Printf()```, which prints text to the screen.
+An import statement, to keep things simple, is basically telling the compiler "hey, we need this package of code, can you go find it so I can use some of the code within it?". In the case above we are calling the "Format" package. This is a built in package and is what will give us the ability to print strings to the screen.
 
 ```go
-func main (){...}
+func main() {...}
 ```
 
-When creating a Go script the code execution starts within the main function, because I need no other function all of the work will be done within this one for now. Above I have the opening and closing brackets "{...}",the code within the function running is represented by the three periods "..."
+The line above is a function decloration. We will go into these in more depth at a later point in time, for now there is only one key take away we need to have. The Main function in Go is our starting point. When a go script is ran/or executed the first thing it will do, to keep it light, is call the main function.
 
+Every Go program needs to start within the main function.
+
+## 00_Hello_World
+Now that we have a general Idea of the basics a Go script needs, lets get into writing some code. In this file we see the package, import, and main lines of code mentioned above, however we see something in the main function that we didn't go over yet, so lets do that now.
 ```go
-fmt.Println("Hello World!")
+func main() {
+	fmt.Println("Hello World!")
+}
 ```
-The Println function is a function within fmt that prints a string with basic format options such as a new line at the end of the string. In later files the use of Printf will be present for verbs within a string. More on that a little further down.
+Within the main function we see the word "fmt" with the word "Println" attached to it with a period. What does this mean?
 
-The lines of code above combined and put in a file called Hello_World.go gives us our first Go script. This file can then be either interpreted through the go run command, or it can be compiled into an executable. If your on windows thats an exe, on mac and linux it is an elf executable.
+Println is a function that prints a string we pass it (everything in the paranthesis next to it), in order to use that function we need to tell the compiler where it is. We do that by adding the "fmt" in front of it, connected with a period.
 
-## Hello_V
-This file is simular to the Hello World file, however this one is demenstrating the use of a "verb" within a string. A "verb" is a temparary variable that is placed in the string, that is then replaced with the value of a given argument when the string is printed to the screen. This function can print many different data types as arguments. Datatypes have not been covered in detail yet, so this wont be explained much here, however this is a topic that will be touched on in later projects as this print function can be very useful in debugging.
+This is essentially saying, in fmt, there is a function called Println.
 
+An even shorter way of saying it
+
+in fmt, theres a function, Println
+
+or even shorter
+
+in fmt, Println
+
+how a computer sees it
+
+fmt.Println
+
+## 01_Verbs
+In this file we see 2 new things, the first one is a new print function, Printf, and a "%v" in one of the arguments we hand it.
+
+The reason we went with a new print function from fmt, is so we had access to Verbs. A Verb in Go is essentually a placeholder within a string, that will then be later replaced with some kind of value. In the example we see that there are 2 sets of strings in quotes, seperated by a comma being passed to the printf function. The first being "%v World!", and the second being "Hello". The first string is the string we want the function to print, the second is the value we want to replace the "%v" with.
+
+All said and done the printf function will return a string that reads, "Hello World!". If we replaced the second string, with lets say "Oh My", the main function will print the string 
+
+"Oh My World!"
+
+## 02_Double_Verbs
+In 01_Verbs we saw that we can use %v to insert one string into another. What if we wanted more, so we could do things like print a greeting. This example shows how that can be acheived.
+
+When using the printf function we can use as many verbs as we'd like, however we need to make sure we pass the same number of arguments, to little or to many arguments can result in an error, an easier way to look at what is going on is if we use "sudo code" or "Fake code" to better explain what is happening
+```
+("hello <variable_1> <variable_2>, How are you?", variable_1, variable_2)
+```
+Above is a line of code that wouldn't exactly work if we wrote it in the Go script, but it helps breakdown what is happening a little better, there are 3 arguments being passed to printf, the first is the string we want to print, and as we can see, each value afterthat will correspond with a spot in the string we want to print.
+
+That being said we could make an entire string out of verbs. Although it would look pretty weird.
 ```go
-fmt.Printf("%v, it works!", var)
+fmt.Printf("%v %v %v, %v %v %v", "Hello", "Thomas", "Edison", "How", "are", "you?")
 ```
+this will give us the same output as the example in the file.
 
-Above we see the printf function being passed a string, and a variable name. Within the string there is a special character combonation, "%v". This is simuilar to how C denoted a verb within a string. The Percent sign (%) tells printf that this is the location to put the variable, and "v" which tells print to print the data in the default format. If we were to replace the "v" with something like a "p" then we would get a different value like the location in memory in which that variable is saved.
+## Conclusion
+The major point of starting with this topic first is so we have a way to see what we are doing with the code. In the examples to come we will be doing all sorts of things with words and numbers. We have to have some way to see it. The Printf and Println functions are going to be used in a majority of the examples you see through out the repository so make sure you spend some time playing with them, and even doing some further research on them if need be.
 
-## Hello_Afar
-This file contains multiple new conscepts outside of just string printing, Some of those I will highlight brefiely so any person new to programming can try to follow along.
-
-```go
-Firstname := "James"
-```
-The First concept is variable creation, Here we see that I declare the string "James" to the variable Firstname. A string is a dataype and is basically just a collection of characters, like a word, or sentance. We do that with ":=". I will touch more on this in the datatypes section. For now just now its how we set variables.
-
-```go
-func Greeting_user(F string, L string) {...}
-```
-The Second concept is creating a new function. This is another concept that will be reviewed later on. This is simular to the main function in the sense of it being a collection of code that runs when called. The same way the main function is called, we can call a function we create from within main itself. This allows us to keep code inside of main condensed. We see that it takes to arguments, F and L, and they are both strings. This means when we call the function we can either pass it 2 strings or 2 variables of type string.
-```go
-Greet_user("James", "Dean")
-```
-Strings
-```go
-Greet_user(Firstname, Lastname)
-```
-variables
-We can see the variables dont have quotes. Meaning the compiler will look for a varaible with that name rather then passing the strings as is.
-
-Aside from the new topics the function actually that prints the string is the same as the function from Hello_V, just taking new arguments.
-
-## Hello_Pointer, Hello_Hijack, Hello_Proper
-If you are new to programming or looking at how to print a string, these files will not be needed. The point of these files were to show the use of pointers in Go. This topic will be touched on later on, the purpose of them being here is to show another method of passing strings through a function, and then demenstrate why it may, or may not, be useful in a project.
-
-A pointer is a refrence to a variables location in memory. These are denoted with &, they are derefrenced with the *, they will apear in the code as shown below
-```go
-&Firstname
-```
-Above will give us the location in memory of the varaiable, not the value the varaible holds.
-
-In order to access the information at the address in memory we need to derefrence that variable, or in leiman terms, tell the compiler "I see where your located, but what value does that location hold." We use the "*"
-```go
-*Fristname
-```
+A good milestone to know if your ready to move on is, from scratch without external help, create a go script that prints a sentence, and run it successfully. If you can do that then you shouldn't have any issues with whats to come.
