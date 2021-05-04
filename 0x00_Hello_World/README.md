@@ -5,15 +5,12 @@ Each one of the files above has a simlilar job, print some data. How we do that 
 
 Okay so we have an idea of what we want our code to do,  but how do we get started? Well lets start at the top of the page and work our way down.
 
-Each one of the files above will start wil the same 3 lines so lets review those lines to have a better understanding.
+Each one of the files above will start with the same 3 lines so lets review those lines to have a better understanding.
 
 ```go
 package main
 ```
-
-Okay so hopefully you read the README, or the enviornment setup section of the README in the previous directory. In that section I mention setting up a module. The line above is declaring the name for the package we are writing. When importing a package in a go script, we will need to have our go module(think go.mod), refrencing the module containing the package we want to import.
-
-For now we can call the package main, and because there is no plan for these scripts to be used outside of learning, each of the scripts in this folder will have a package name of main.
+The line above is a manditory line in Go. This is because every Go script will start within the main package. The scripts we will start off writing are by no means complex enough to have real value in importing into another project, so for now we will just need to know that every file will start with this line. When the Repository is finished and all the steps are added, I will create an example project demonstrating and explaining in greater detail how to create a module and export it in a way others can utilize.
 
 ```go
 import "fmt"
