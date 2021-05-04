@@ -10,7 +10,7 @@ Each one of the files above will start with the same 3 lines so lets review thos
 ```go
 package main
 ```
-The line above is a manditory line in Go. This is because every Go script will start within the main package. The scripts we will start off writing are by no means complex enough to have real value in importing into another project, so for now we will just need to know that every file will start with this line. When the Repository is finished and all the steps are added, I will create an example project demonstrating and explaining in greater detail how to create a module and export it in a way others can utilize.
+The line above is a manditory line in Go. This is because every Go script will start within the main package. The scripts we will start off writing are by no means complex enough to have real value in importing into another project, so for now we will just need to know that every file will start with this line. When the Repository is finished and all the steps are added, I will create an example project demonstrating and explaining in greater detail how to create a package and set it up it in a way others can utilize.
 
 ```go
 import "fmt"
@@ -56,7 +56,9 @@ In this file we see 2 new things, the first one is a new print function, Printf,
 
 The reason we went with a new print function from fmt, is so we had access to Verbs. A Verb in Go is essentually a placeholder within a string, that will then be later replaced with some kind of value. In the example we see that there are 2 sets of strings in quotes, seperated by a comma being passed to the printf function. The first being "%v World!", and the second being "Hello". The first string is the string we want the function to print, the second is the value we want to replace the "%v" with.
 
-All said and done the printf function will return a string that reads, "Hello World!". If we replaced the second string, with lets say "Oh My", the function will return the string "Oh My World!"
+All said and done the printf function will return a string that reads, "Hello World!". If we replaced the second string, with lets say "Oh My", the main function will print the string 
+
+"Oh My World!"
 
 ## 02_Double_Verbs
 In 01_Verbs we saw that we can use %v to insert one string into another. What if we wanted more, so we could do things like print a greeting. This example shows how that can be acheived.
@@ -72,3 +74,8 @@ That being said we could make an entire string out of verbs. Although it would l
 fmt.Printf("%v %v %v, %v %v %v", "Hello", "Thomas", "Edison", "How", "are", "you?")
 ```
 this will give us the same output as the example in the file.
+
+## Conclusion
+The major point of starting with this topic first is so we have a way to see what we are doing with the code. In the examples to come we will be doing all sorts of things with words and numbers. We have to have some way to see it. The Printf and Println functions are going to be used in a majority of the examples you see through out the repository so make sure you spend some time playing with them, and even doing some further research on them if need be.
+
+A good milestone to know if your ready to move on is, from scratch without external help, create a go script that prints a sentence, and run it successfully. If you can do that then you shouldn't have any issues with whats to come.
