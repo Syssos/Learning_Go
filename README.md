@@ -85,12 +85,7 @@ This should return the current version of go installed.
 After we have Go installed we need to have a couple things initialized before we can get into actually writing code. Below I will go over how I initialized the enviornment for this repository, note that there will be a section dedicated to understanding this further when we get into working with external packages. This will cover setting up a local module in order to run the code we write.
 
 ### Enviornment Setup
-The first thing we need to do is create a location in which we will have the project source code. Lets look at the current repository for example. The Root is "Learing_Go", and our first directory is "0x00_Hello_World"
-
-Now that we have those 2 folders the directory tree should look like it does below
-
-Learning_Go
-	\\--- 0x00_Hello_World
+The first thing we need to do is create a location in which we will have the project source code. Lets look at the current repository for example. The Root is "Learing_Go", and our first directory is "0x00_Hello_World".
 
 Now cd to the parent directory of "Learning Go", this is where we will initialize the Go module. We can do this by running the following command
 
@@ -98,9 +93,9 @@ Now cd to the parent directory of "Learning Go", this is where we will initializ
 go mod init Learning_Go
 ```
 
-This command is doing some very important things as far setting up an enviornment. After running the command you will notice a "go.mod" file was created in the current directory. This file is super important to Go as it is what manages the dependencies the package you are creating requires. For now however our code only requires built in packages(ie "fmt") so the generic go.mod file will work for us at the moment.
+This command is doing some very important things as far setting up an enviornment. It is creating a **Module** for our project. After running the command you will notice a "go.mod" file was created, and placed in the current directory. This file is super important to Go as it is what manages the dependencies the **Module** you are creating requires. For now however the generic go.mod file is fine as all of our code will be within one file, and using only built in functions.
 
-Once the go.mod file is created we should be able to start writing code and storing it in the first folder or in other folders as we make them. For now to keep things simple we will cover a little more on how Go operates before we cover this topic in its full extent.
+The scripts can be saved in sub-directories of "Learning_Go" for now. As we learn more about Go, and how the packages/imports work, changes will be made to reflect the best practices for module and package management. For now lets just focus on learning the syntax of Go, and get familiar with how it works.
 
 ### Code Execution
 Once we have the enviornment setup we can start focusing on running the code we write. Lets take a look at running the "Hello_World.go" script, inside the "0x00_Hello_World" directory.
@@ -128,7 +123,7 @@ This will create and place a new executable with the same file name as the scrip
 ## Directories
 
 ### 0x00_Hello_World
-This Directory is dedicated to learning the basics of Go. I Learned how to run and build the code as well as the basic syntax and file structure. I also looked into printing strings to the standard output as this will be used to show everything we are doing as we learn and progress.
+Now that we have an enviornment setup to write, run, and compile code we can start getting our feet wet. In this directory we will go over some simple print functions
 
 ### 0x01_Variables
 This Directory is all about varibales and datypes in Go. There are a few that are different from C that I would like to highlight, as well as cover the basics of how go handles common datatypes.
