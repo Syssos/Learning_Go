@@ -33,11 +33,11 @@ The above link will bring you to the downloads page for Go, in the section below
 For more installation on installing Go from the source, please refer to their documentation
 https://golang.org/doc/install/source
 
-1. Extract the information within the downloaded archive file downloaded from the Go website, to /usr/local this should look like ``` go[version #].linux-amd64.tar.gz ```
+1. Download and extract the archive file from the Go website, to "/usr/local". The file downloaded should look similar to ``` go[version #].linux-amd64.tar.gz ```
 
-	**Important:** Files stored in the location /usr/local/go will need to be removed or overwritten if they exist to ensure the installation has no errors. To ensure the location is cleared and no files are there we will remove that file and then extract the tar.gz file
+	**Important:** Files stored in the location /usr/local/go will need to be removed if they exist to ensure the installation has no errors. To ensure the location is cleared and no files are at that location we will remove that file and then extract the tar.gz file to that location.
 
-	\* Note that in this case I am using the Go version 1.16.3 tar.gz at the time of creating this, so the file name may need to be replaced if you copy and paste this snippet
+	\* Note that I am using the Go version 1.16.3 tar.gz at the time of creating this, so the file name "go1.16.3.linux-amd64.tar.gz" may need to be replaced if you copy and paste this snippet
 	
 	``` sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.16.3.linux-amd64.tar.gz ```
 
@@ -45,11 +45,13 @@ https://golang.org/doc/install/source
 	
 	```	export PATH=$PATH:/usr/local/go/bin	```
 
-	or you can run the command below to echo and append the line.
+	or you can run the command below to echo and append the line to the end of the $HOME/.profile file.
 	
 	```	echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.profile ```
 
 	Due to the method of adding go to the path, the changes will not take affect until a reboot, to have them take affect immediatly run the export command from the command line.
+
+	**When trying to do this export with zsh I found that putting the export at the end of .zshrc file had the same result as this is called when zsh is started**
 
 3. Ensure Go is installed and refrenced correctly in the PATH by getting the go version with the command below.
 	
