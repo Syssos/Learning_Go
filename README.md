@@ -44,11 +44,7 @@ https://golang.org/doc/install/source
 2. Now that the Go files are in the local directory we need to add the PATH environment variable. To do this open either $HOME/.profile (\~/.prfile) or /etc/profile in a text editor of your choice and append the following line to the end of the file.
 	
 	```	export PATH=$PATH:/usr/local/go/bin	```
-
-	or you can run the command below to echo and append the line.
 	
-	```	echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.profile ```
-
 	Due to the method of adding go to the path, the changes will not take affect until a reboot, to have them take affect immediatly run the export command from the command line.
 
 3. Ensure Go is installed and refrenced correctly in the PATH by getting the go version with the command below.
