@@ -73,7 +73,27 @@ https://www.tutorialspoint.com/go/go_data_types.htm
 https://docs.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-160  
 
 ## 02_Floats
+Like the int dataype, the number after the keyword float is in refrence to the amount of storage space allocated to the variable. Due to the nature of floats, more space is required to save everything before and after the decimal point, meaning the amount of bytes needed to represent a number is greater. This is why we do not see a float8 or float16 like we did with integars.
 
+Floats are composed of ints, so lets say we have a float32, lets break that down in a more understandable way
+
+3.14
+
+lets see the minimum requirements to save this number
+
+[1 byte].[1 byte]
+
+as you can see the total number of bytes is only 2, which would make up a float16, however that only allows us to store a number as large as 127.127, and theres many cases in which this will simply not work.
+
+lets say we change it up a little more
+
+[2 bytes].[2 bytes]
+
+here we have more bytes, which means we can store bigger numbers. By adding a byte to each side of the period we can now store a number as large as 32767.32767, and the float variable will be 4 bytes in size, or a float32
+
+While this is not exactly whats going on, it does give us a better idea as to why we only see 2 float types opposed to the amount of ints. Aside from accounting or utilizing unsigned ints the compiler also needs to keep track of the "." and its location within the number so there are more factors in account then shown above.
+
+Until more uses for these variables arise the most important thing to keep in mind is any number that has contains a decimal point will need to be stored as a float. We will go over floats and int in a little more detail when we get to more complex dataypes such as structs. This will allow us to visually see why the datatypes are important as they are.
 
 ## 03_Booleans
 
