@@ -19,6 +19,10 @@ Go is an extremely powerful langauge to have in your toolbelt as a developer on 
  - [Directories](#directories)
  	* [0x00_Hello_World](#0x00_hello_world)
  	* [0x01_Variables](#0x01_variables)
+ 	* [0x02_Functions](#0x02_functions)
+ 	* [0x03_If_Else](#0x03_if_else)
+ 	* [0x04_Return_and_Recursion](#0x04_return_and_recursion)
+ 	* [0x05_More_Strings](#0x05_more_strings)
 
 ## Download
 
@@ -127,3 +131,12 @@ This Directory is dedicated to learning the basics of Go. I Learned how to run a
 
 ### 0x01_Variables
 This Directory is all about varibales and datypes in Go. There are a few that are different from C that I would like to highlight, as well as cover the basics of how go handles common datatypes.
+
+### 0x02_Functions
+
+### 0x03_If_Else
+
+### 0x04_Return_and_Recursion
+
+### 0x05_More_Strings
+
