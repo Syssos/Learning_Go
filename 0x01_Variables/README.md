@@ -102,5 +102,36 @@ Below is a chart for float sizes
 
 ## 03_Booleans
 
+Booleans are a rather simple datatype as it is a representation of true or false. They are important to touch base on however because the relevance of true or false in programming is pretty vast. As you will see in this example the "if" statement is checking **if the variable is true or false**, if it is true it will run the code in the brackets following. If it is false it will move on to the next part of the code.
+
+The concept of true or false will be seen all over the place in Go code. While you may not always be setting a variable to true or false, comparisons that guide the codes functionality will heavily rely on this concept.
 
 ## 04_Complex
+
+Complex numbers in Go are not something you will need to worry about when writing day to day Go scripts. However it is a concept we should touch on so your aware of their presence in the langauge.
+
+To explain complex numbers lets look at how the computer stores them.
+
+``` complex64 = (<float32>, <float32>) ```
+
+or
+
+``` complex128 = (<float64>, <float64>) ```
+
+As we see above a complex number is essentually 2 float variables combined. However when storing a complex number the 2nd argument is seen as an imaginary number. The example for complex numbers outlines that, and also shows us some basic Arithmetic between 2 complex numbers. Please note that any kind of arithmetics will require complex numbers of the same type.
+
+## 05_Type_casting
+
+All of the above outlines how important types are to Go, but what if we have a 42 as a string, and need to add it to a 7 thats an int? Well Go lets us to that with "type conversions". This example should look pretty straight forward if you've been following along. We do have to keep one thing in mind however, the dataype conversion **must make sense**. If we try to store a value such as "S" into an int8 or int32 we will get an error, this is because a string can store non-numerical values, which cannot be stored as an int. Even with a string being only "42" the compiler will refuse as it is much more time consuming to skip this checking process, and Go is all about speed.
+
+However the example does outline some working examples of type conversion. This will mainly be used when trying to do some kind of arithmetic calculations on numbers not stored as the same datatype.
+
+## 06_Letting_Go_pick
+
+Now that we have a basic understanding of the datatypes in Go, and know we can change variable types as long as it makes sense, lets look at one of the cool features Go guideve developers. For obvious reasons constantly declaring variable types can be hard to track, or time consuming to write out. Lets be honest, as developers we already do a lot of typing, so the less we have to the better.
+
+With the ":" sign before the "=", we are telling the compiler to assign a datatype to the variable, that makes sense, for us. If we say ``` x := 3.14 ``` the compiler will look at the data we want to save, see that it has a decimal point, and know to save that variable as a float. This is a much more convienent way of creating variables.
+
+## Conclusion
+
+Datatypes in go will soon become a small part of the langauge as we learn and devolop our skills, however it is important to know what is going on in the computers brain to write efficent code. If you are new to programming, and are still a little fuzzy on any of the datatypes above, it is strongly recommended that you do further research on this topic, as it is not just Go that use's this method of storing information and understanding it is an important part to being a better programmer all around.
