@@ -30,7 +30,7 @@ In this example strings are printed and combined(also known as concatenated). He
 
 - We can store strings as a variable, and then combined them with raw strings, if need be.
 
-Directories down the line, for a lack of better terms, will cover using strings in a more complex manor. That being said as long as we have a basic understanding of strings we should be fine for now moving forward. If you are new to programming and want to challange yourself a little bit, try to save the string ``` Sure, Monday's are the "best" day of the week ``` into a variable with the name "Monday". To help you out a little bit, if you do research on this, it should lead you to articles on "escaping" a character in a string.
+We will cover using strings in a more complex manor later on. As long as you have a basic understanding of strings we should be fine for now moving forward. If you are new to programming and want to challange yourself a little bit, try to save the string ``` Sure, Monday's are the "best" day of the week ``` into a variable with the name "Monday". To help you out a little bit, if you do research on this, it should lead you to articles on "escaping" a character in a string.
 
 ## 01_Ints
 
@@ -85,15 +85,20 @@ lets see the minimum requirements to save this number
 
 as you can see the total number of bytes is only 2, which would make up a float16, however that only allows us to store a number as large as 127.127, and theres many cases in which this will simply not work.
 
-lets say we change it up a little more
+Lets make it a little more useful by adding 1 more byte on each side of the decimal.
 
 [2 bytes].[2 bytes]
 
-here we have more bytes, which means we can store bigger numbers. By adding a byte to each side of the period we can now store a number as large as 32767.32767, and the float variable will be 4 bytes in size, or a float32
+More bytes means we can store bigger numbers. By adding a byte to each side of the period we can now store a number as large as 32767.32767, and the float variable will be 4 bytes in size, or a float32
 
-While this is not exactly whats going on, it does give us a better idea as to why we only see 2 float types opposed to the amount of ints. Aside from accounting or utilizing unsigned ints the compiler also needs to keep track of the "." and its location within the number so there are more factors in account then shown above.
+While this is not exactly whats going on behind the scenes, it should give you a better idea as to why we only see 2 float types opposed to the amount of int types.
 
-Until more uses for these variables arise the most important thing to keep in mind is any number that has contains a decimal point will need to be stored as a float. We will go over floats and int in a little more detail when we get to more complex dataypes such as structs. This will allow us to visually see why the datatypes are important as they are.
+Below is a chart for float sizes
+
+| Dataype   | Bytes |            Size          |
+| :-:       | :---  | :---                     |
+| "float32" |   4   | 3.4E +/- 38 (7 digits)   |
+| "float64" |   8   | 1.7E +/- 308 (15 digits) |
 
 ## 03_Booleans
 
