@@ -1,10 +1,11 @@
 # Learning Go
-### The tasks I used to learn the basics
-Go is an extremely powerful langauge to have in your toolbelt as a developer on any level. It has a bunch of packages built in that can be utilized and its goal is to create lightweight executables without the hastle of other lower level langanges. It deals with memory management (which coming from C is a very nice touch), and will hold you responsible for imports or variables that are declared and never used.
 
-I could turn this readme into a list with all the reasons Go is a good langauge to learn, but for the sake of time and to get back to learning I'll just move along. In the following directories are Go scripts, grouped together by category, I used to learn the langauge. Alongside anther readme describing the point of each script.
+Go is an extremely powerful langauge to have in your toolbelt as a developer on any level. Go has amazing built in packages and an amazing method of utilizing external packages. Go's goal is to create lightweight executables without the hastles, or drawbacks other lower level langanges provide. It deals with garbage collection (which coming from C is a very nice touch), and will hold you responsible for imports or variables that are declared and never used. This helps limit the amount of resources required from the machine during code execution. Those are just some of the benefits Go has to offer, this repository will cover the basics of Go and a majority of the benifits Go offers developers.
+
+## Table of Contents
 
  - [Overview](#learning-go)
+ - [Table of Contents](#table-of-contents)
  - [Download](#download)
  - [Installation](#installation)
  	* [Linux](#linux)
