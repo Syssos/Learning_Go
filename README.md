@@ -136,7 +136,3 @@ This Directory is all about varibales and datypes in Go. There are a few that ar
 
 ### 0x03_If_Else
 
-### 0x04_Return_and_Recursion
-
-### 0x05_More_Strings
-
