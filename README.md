@@ -137,3 +137,8 @@ This Directory is all about varibales and datypes in Go. While most of these var
 In this Directory I will cover what a function is and how we can utilize them in our code. We will also see how functions can be imported from another package, and even how to use a package from github. Functions are workhorse behind most of the projects you will work on, as they allow you to breakup code and make it easier to read.
 
 ## Conclusion
+
+Because the repo is not finished I do not want to add a conclusion yet, Once the repo is finished the conclusion will be updated.
+
+
+[Back to Top](#learning-go)
