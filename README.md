@@ -21,8 +21,6 @@ Go is an extremely powerful langauge to have in your toolbelt as a developer on 
  	* [0x01_Variables](#0x01_variables)
  	* [0x02_Functions](#0x02_functions)
  	* [0x03_If_Else](#0x03_if_else)
- 	* [0x04_Return_and_Recursion](#0x04_return_and_recursion)
- 	* [0x05_More_Strings](#0x05_more_strings)
 
 ## Download
 
@@ -127,12 +125,13 @@ This will create and place a new executable with the same file name as the scrip
 ## Directories
 
 ### 0x00_Hello_World
-This Directory is dedicated to learning the basics of Go. I Learned how to run and build the code as well as the basic syntax and file structure. I also looked into printing strings to the standard output as this will be used to show everything we are doing as we learn and progress.
+Hello world is all about the basics. In order for Go code to run there are a couple things required. This Directory covers what they are, and why they are needed. Along side learning the requirements for a script this directory will cover printing to the screen, or standard output. As you will see in the directories to come, this will be a very important concept. Even if you have some programming experiance, I recommend at least crusing through the code to see how Go does this.
 
 ### 0x01_Variables
-This Directory is all about varibales and datypes in Go. There are a few that are different from C that I would like to highlight, as well as cover the basics of how go handles common datatypes.
+This Directory is all about varibales and datypes in Go. While most of these variables are the same in concept as other "low level" programming languages its vital to understand how Go stores data in order to write extremely efficent code. This Directory is dedicated to breaking down variables and datatypes, as well as type conversions so you can "have the right type for the job".
 
 ### 0x02_Functions
+In this Directory I will cover what a function is and how we can utilize them in our code. We will also see how functions can be imported from another package, and even how to use a package from github. Functions are workhorse behind most of the projects you will work on, as they allow you to breakup code and make it easier to read.
 
 ### 0x03_If_Else
 
