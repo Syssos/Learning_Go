@@ -21,6 +21,7 @@ Go is an extremely powerful langauge to have in your toolbelt as a developer on 
  	* [0x01_Variables](#0x01_variables)
  	* [0x02_If_Else](#0x02_if_else)
  	* [0x03_Functions](#0x03_functions)
+ - [Conclusion](#conclusion)
 
 ## Download
 
@@ -134,3 +135,5 @@ This Directory is all about varibales and datypes in Go. While most of these var
 
 ### 0x03_Functions
 In this Directory I will cover what a function is and how we can utilize them in our code. We will also see how functions can be imported from another package, and even how to use a package from github. Functions are workhorse behind most of the projects you will work on, as they allow you to breakup code and make it easier to read.
+
+## Conclusion
