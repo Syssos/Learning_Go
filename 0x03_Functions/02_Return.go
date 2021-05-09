@@ -6,6 +6,10 @@ import (
 )
 
 func main(){
+	/*
+		Program entry point, sets variables, controls program flow
+		Return: No return values
+	*/
 
 	// declaring a float, because abs requires that type
 	number := float64(-2)
@@ -18,6 +22,10 @@ func main(){
 }
 
 func math_abs(x float64) float64 {
+	/*
+		Prints abs of value given along with message
+		Return: float64, abs of argument 0
+	*/
 
 	// finds abs of value passed in and assigns it to the variale
 	abs_val := math.Abs(x)
