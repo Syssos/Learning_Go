@@ -78,3 +78,5 @@ A good use case for this is demenstrated in 01_Imports, when we set the function
 ## Conclusion
 
 When working with any kind of programming language functions are always yout friend. Keeping code clean and easy to read is the best way to keep track of whats going on. Functions not only allow us to acheive this, but they give us a way to use the same "Chunks" of code, whenever we may need it. Understanding how functions and returns work is extremly important and it is highly recommended that you do further research if you still have questions on how they work.
+
+[Back To Top](#functions)

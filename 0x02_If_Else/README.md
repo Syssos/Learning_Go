@@ -70,3 +70,5 @@ Default for a switch statement will work the same way as the else statement.
 ## 03_Recap
 
 This recap highlights some very important concepts we covered in the last few directories, These are the absolute basics of the Go programming language. It's very likely that a majority of the topics discused will be used in every script, or program you write in the future. Hopefully that outlines the importances of knowing these concepts. There is a large amount of online resources that can help you if there is anything I didn't explain in enough detail. I recommend spending some time writing scripts like this example if you are still a little fuzzy on the topic. Google each error message and over time the messages will start to make sense as you learn what the code is doing in the background.
+
+[Back To Top](#if_else)

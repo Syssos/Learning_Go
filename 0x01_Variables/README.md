@@ -1,4 +1,4 @@
-# 0x01_Variables
+# Variables
 ### Dataype Time
 Quick overview:
 	This directory is dedicated to datatypes, below I will outline the datatypes used in the files above. In the table I will give a brief overview of the general datatypes that appear to be present in most programming langauges, however because Go is compiled we have some more flexability then say python when it comes to saving/or storing data. This means that Go will require a little more in-depth knowledge about these dataypes, and we will go over those specifics as we get to them in the examples.
@@ -135,3 +135,5 @@ With the ":" sign before the "=", we are telling the compiler to assign a dataty
 ## Conclusion
 
 Datatypes in go will soon become a small part of the langauge as we learn and devolop our skills, however it is important to know what is going on in the computers brain to write efficent code. If you are new to programming, and are still a little fuzzy on any of the datatypes above, it is strongly recommended that you do further research on this topic, as it is not just Go that use's this method of storing information and understanding it is an important part to being a better programmer all around.
+
+[Back To Top](#variables)

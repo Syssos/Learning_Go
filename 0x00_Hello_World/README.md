@@ -1,4 +1,4 @@
-# 0x00_Hello_World
+# Hello_World
 ## Gettings started 
 
 Each one of the files above has a simlilar job, print some data. How we do that is different in each file. The goal here is to have a solid understanding of printing data to the screen before movinbg on. This is because printing data to the screen(or the "standard output") is one of the most important features in most programming langauges. We will use print functions all over the place, and can they be your best friend while debugging issues in more complex scripts.
@@ -79,3 +79,5 @@ this will give us the same output as the example in the file.
 The major point of starting with this topic first is so we have a way to see what we are doing with the code. In the examples to come we will be doing all sorts of things with words and numbers. We have to have some way to see it. The Printf and Println functions are going to be used in a majority of the examples you see through out the repository so make sure you spend some time playing with them, and even doing some further research on them if need be.
 
 A good milestone to know if your ready to move on is, from scratch without external help, create a go script that prints a sentence, and run it successfully. If you can do that then you shouldn't have any issues with whats to come.
+
+[Back To Top](#hello_world)
