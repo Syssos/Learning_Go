@@ -19,8 +19,8 @@ Go is an extremely powerful langauge to have in your toolbelt as a developer on 
  - [Directories](#directories)
  	* [0x00_Hello_World](#0x00_hello_world)
  	* [0x01_Variables](#0x01_variables)
- 	* [0x02_Functions](#0x02_functions)
- 	* [0x03_If_Else](#0x03_if_else)
+ 	* [0x02_If_Else](#0x02_if_else)
+ 	* [0x03_Functions](#0x03_functions)
 
 ## Download
 
@@ -130,8 +130,7 @@ Hello world is all about the basics. In order for Go code to run there are a cou
 ### 0x01_Variables
 This Directory is all about varibales and datypes in Go. While most of these variables are the same in concept as other "low level" programming languages its vital to understand how Go stores data in order to write extremely efficent code. This Directory is dedicated to breaking down variables and datatypes, as well as type conversions so you can "have the right type for the job".
 
-### 0x02_Functions
+### 0x02_If_Else
+
+### 0x03_Functions
 In this Directory I will cover what a function is and how we can utilize them in our code. We will also see how functions can be imported from another package, and even how to use a package from github. Functions are workhorse behind most of the projects you will work on, as they allow you to breakup code and make it easier to read.
-
-### 0x03_If_Else
-
