@@ -42,7 +42,7 @@ If you are used to other programming languages like python, then you may be fami
 
 Picture the following array
 ```go
-	arr := [4]{ "Go", "is", "super", "fun"}
+arr := [4]{ "Go", "is", "super", "fun"}
 ```
 
 | Memory location   | Data Stored in memory |
@@ -96,4 +96,4 @@ This directory outlined for loops and arrays, and hopefully shows the two can go
 
 A great way to continue practicing these topic's would be to combine these, and everything we've made so far, and make a more complex program such as a game like rock paper siccors. Don't be afraid to research topics and do some further reading into errors.
 
-[Back To Top](#for_loops_and_arrays)
+[Back To Top](#loops_and_arrays)
