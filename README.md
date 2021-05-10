@@ -21,6 +21,8 @@ Go is an extremely powerful langauge to have in your toolbelt as a developer on 
  	* [0x01_Variables](#0x01_variables)
  	* [0x02_If_Else](#0x02_if_else)
  	* [0x03_Functions](#0x03_functions)
+ 	* [0x04_Loops_and_Arrays](#0x04_loops_and_arrays)
+ 	* [0x05_Slices](#0x05_slices)
  - [Conclusion](#conclusion)
 
 ## Download
@@ -132,9 +134,16 @@ Hello world is all about the basics. In order for Go code to run there are a cou
 This Directory is all about varibales and datypes in Go. While most of these variables are the same in concept as other "low level" programming languages its vital to understand how Go stores data in order to write extremely efficent code. This Directory is dedicated to breaking down variables and datatypes, as well as type conversions so you can "have the right type for the job".
 
 ### 0x02_If_Else
+This Directory will get you started using if statement. It covers everything from a basic if else, up to a switch case. Which as you will see is essentually a fancy way of doing a bunch of if else statements. Why would you want a bunch of if else statements? Easy, there extremly useful. Not only will they be useful in different types of projects, but they can be used to check for errors, as you will see in 0x03_Functions. 
 
 ### 0x03_Functions
 In this Directory I will cover what a function is and how we can utilize them in our code. We will also see how functions can be imported from another package, and even how to use a package from github. Functions are workhorse behind most of the projects you will work on, as they allow you to breakup code and make it easier to read.
+
+## 0x04_Loops_and_Arrays
+Loops and Arrays is dedicated to for loops and how to use them, and what arrays are. These two go side by side as often times you will be using a for loop do to "something" for each item in an array. This Directory covers all the good stuff you need to know for directorys to come that deal with slices, or arrays, heck even strings can be thought of in the same manor as an array...
+
+## 0x05_Slices
+
 
 ## Conclusion
 

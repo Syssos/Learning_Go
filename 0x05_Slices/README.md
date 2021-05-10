@@ -4,11 +4,12 @@
 
 ## 00_Slices
 
-## 01_Slice_Start
+## 01_Start
 
-## 02_Slice_end
+## 02_End
 
-## 03_Slice_middle
+## 03_Append
 
+## 04_Remove
 
 [Back To Top](#slices)
