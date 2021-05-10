@@ -96,4 +96,4 @@ This directory outlined for loops and arrays, and hopefully shows the two can go
 
 A great way to continue practicing these topic's would be to combine these, and everything we've made so far, and make a more complex program such as a game like rock paper siccors. Don't be afraid to research topics and do some further reading into errors.
 
-[Back To Top](#loops_and_arrays)
+[Back To Top](#for-loops-and-arrays)
