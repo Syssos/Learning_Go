@@ -8,22 +8,22 @@ func main() {
 		Return: None
 	*/
 
-	// Declaring parent array
-	arr := []int{312, 1243, 123, 654, 345, 865}
+	// Declaring parent slice
+	slice := []int{312, 1243, 123, 654, 345, 865}
 
-	// Printing parent array
-	fmt.Println(arr)
+	// Printing parent slice
+	fmt.Println(slice)
 
-	// Removing arr[1], note this will not keep the array in order
-	// Replacing value with last item in array
-	arr[1] = arr[len(arr)-1]
+	// Removing arr[1], note this will not keep the slice in order
+	// Replacing value with last item in slice
+	slice[1] = slice[len(slice)-1]
 
-	// clearing the value held in last array item
-	arr[len(arr)-1] = 0
+	// clearing the value held in last slice item
+	slice[len(slice)-1] = 0
 
 	// Truncating slice
-	arr = arr[:len(arr)-1]
+	slice = slice[:len(slice)-1]
 
-	// Printing updated arr
-	fmt.Println(arr)
+	// Printing updated slice
+	fmt.Println(slice)
 }
