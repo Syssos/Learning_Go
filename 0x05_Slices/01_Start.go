@@ -11,7 +11,7 @@ func main() {
 	// Declaring array in which slices will be made
 	arr := []int{432, 234, 864, 967, 846, 836}
 
-	// Creating 2 slices from the array
+	// Creating 2 slices from the parent array
 	arr_slice := arr[0:3]
 	arr_slice1 :=arr[3:6]
 
