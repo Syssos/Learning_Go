@@ -9,7 +9,7 @@ func main() {
 	*/
 
 	// Declaring array in which slices will be made from
-	arr := []int{3444, 2342, 5234, 234, 412, 764}
+	arr := [6]int{3444, 2342, 5234, 234, 412, 764}
 
 	// Getting length of arr array
 	arr_length := len(arr)

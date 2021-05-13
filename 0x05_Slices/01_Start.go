@@ -9,7 +9,7 @@ func main() {
 	*/
 
 	// Declaring array in which slices will be made
-	arr := []int{432, 234, 864, 967, 846, 836}
+	arr := [6]int{432, 234, 864, 967, 846, 836}
 
 	// Creating 2 slices from the parent array
 	arr_slice := arr[0:3]

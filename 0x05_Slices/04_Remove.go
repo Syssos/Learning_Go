@@ -14,7 +14,7 @@ func main() {
 	// Printing parent slice
 	fmt.Println(slice)
 
-	// Removing arr[1], note this will not keep the slice in order
+	// Removing slice[1], note this will not keep the slice in order
 	// Replacing value with last item in slice
 	slice[1] = slice[len(slice)-1]
 

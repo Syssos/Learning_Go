@@ -9,7 +9,7 @@ func main(){
 	*/
 
 	// Declaring parent array
-	arr := []int{234, 634, 345, 362, 435}
+	arr := [5]int{234, 634, 345, 362, 435}
 
 	// We want to end with a slice containing the first and last item from the parent array using and appending method
 	// Starting slice with first variable

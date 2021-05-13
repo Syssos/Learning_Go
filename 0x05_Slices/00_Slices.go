@@ -9,7 +9,7 @@ func main() {
 	*/
 
 	// Creating an array, in which the slice will be created from
-	arr_array := []int{34, 35, 86, 12, 04, 21}
+	arr_array := [6]int{34, 35, 86, 12, 04, 21}
 
 	// Creating 2 slices, from the same parent array
 	arr_slice := arr_array[0:6] // Gives us entire array, as the index range will be 0-5
