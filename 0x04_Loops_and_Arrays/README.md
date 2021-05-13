@@ -53,11 +53,9 @@ arr := [4]{ "Go", "is", "super", "fun"}
 | 0x8133            | "fun"                 |
 
 
-Above is a chart that represents roughly how a computer will store an array. The addresses on the left are addresses in memory, the data on the right represent data stored at those address. The reason we specify the length of the array is because it tells the compiler to take x amount of addresses and reserve them to store data.
+Above is a chart that represents roughly how a computer will store an array. The addresses on the left are addresses in memory, the data on the right represent data stored at those addresses. The reason we specify the length of the array is because it tells the compiler to take x amount of addresses in memory and reserve them to store data.
 
 This allows us to pull data out of a list based off index. Lets say we want the word 'super' the third word from the list, arr[2] will give us this because arrays start at 0. When the compiler see's arr[2] it will start at the first location in memory for the arr array(0x8130) and then move forward until it gets to the 3rd address in memory that is tied to that array(0x8132).
-
-An array that has no set size will be assigned a size to it from the compiler, when compiling. The information above should explain why a set size is an aspect to arrays in Go. However as the next directory will cover, a set size does not mean we cannot add or remove items, or the amount of them, but will require some knowledge as to how they are stored.
 
 ## 03_Arrays_and_Functions
 

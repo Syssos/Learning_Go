@@ -9,7 +9,7 @@ func main() {
 	*/
 
 	// Declaring array variables
-	arr := []int{4345, 1231, 5235, 2342, 23235, 235, 233}
+	arr := [7]int{4345, 1231, 5235, 2342, 23235, 235, 233}
 
 	// For loop iteration to end of array
 	for i, v := range arr {
