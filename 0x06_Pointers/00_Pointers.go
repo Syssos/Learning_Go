@@ -15,9 +15,21 @@ func main() {
 	// Declaring pointer by saving the memory address
 	le_point := &str
 
-	// Printing the derefrenced 
-	fmt.Println(*le_point)
+	// Printing the variables value
+	fmt.Printf("Variables value: %v\n", str)
 
-	// Printing the Pointers address, derefrenced variables address, and the variables address
-	fmt.Printf("Pointer address:%p\nDerefrenced pointers address: %p\nVariables address: %p\n", &le_point, *&le_point, &str)
+	// Printing variables address
+	fmt.Printf("Variables address: %p\n", &str)
+
+	// Printing the value of pointer
+	fmt.Printf("Pointers value: %v\n", le_point)
+
+	// Printing the address of pointer
+	fmt.Printf("Pointers address in memory: %p\n", &le_point)
+
+	// Printing the derefrenced value
+	fmt.Printf("Pointers derefrenced value: %v\n", *le_point)
+
+	// Printing the type of pointer
+	fmt.Printf("Pointers type: %T\n", le_point)
 }
