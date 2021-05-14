@@ -25,8 +25,9 @@ func no_point(new_str string) {
 ```
 ### output
 
-**<0xc000010240> This is a test
-<0xc000010260> This is a test**
+**<0xc000010240> This is a test**
+
+**<0xc000010260> This is a test**
 
 If the code above is ran we will see 2 different memory address being printed, aside the same string. This is because the function no_point created a new variable, new_str, and stored the data it was passed into it.
 
@@ -54,8 +55,9 @@ func wth_point(*new_str string) {
 
 ### output
 
-**<0xc00010a050> This is a test
-<0xc00010a050> This is a test**
+**<0xc00010a050> This is a test**
+
+**<0xc00010a050> This is a test**
 
 The code above is starting to look silmular to what we saw in the 00_Pointers example, however we are pasing the variable through a function.
 
