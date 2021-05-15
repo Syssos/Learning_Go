@@ -23,6 +23,9 @@ Go is an extremely powerful langauge to have in your toolbelt as a developer on 
  	* [0x03_Functions](#0x03_functions)
  	* [0x04_Loops_and_Arrays](#0x04_loops_and_arrays)
  	* [0x05_Slices](#0x05_slices)
+ 	* [0x06_Pointers](#0x06_pointers)
+ 	* [0x07_Structs](#0x07_structs)
+ 	* [0x08_Packages](#0x08_packages)
  - [Conclusion](#conclusion)
 
 ## Download
@@ -144,6 +147,11 @@ Loops and Arrays is dedicated to for loops and how to use them, and what arrays 
 
 ## 0x05_Slices
 
+## 0x06_Pointers
+
+## 0x07_Structs
+
+## 0x08_Packages
 
 ## Conclusion
 
