@@ -6,9 +6,17 @@ Through the struct examples we will be looking at a "car" as an example. Due to 
 
 ## 00_Structs
 
-In this example we go over how structs can be utilized to hold different types of data. To start things off you may have noticed that the structure decloration is outside of the main function. Structures are declared out
+In this example we go over how structs can be utilized to hold different types of data. To start things off you may have noticed that the structure decloration is outside of the main function. Structures are declared outside of the main function for an important reason. It allows for methods. As you will see in the last example methods are a very useful feature to have when working with structs.
+
+When creating the struct instance new_car, we see that the variables in the brackets are just values. This is because the those values are assumed to represent the data to be stored as a struct instance. They are in the same order as declared in the struct and putting the wrong data in the wrong spot will result in either errors or incorrect data being stored.
+
+The following example outlines how values can be added with a little more "accuracy" 
 
 ## 01_Adding_Values
+
+When creating an instance of a struct, having data to fill the attributes is not required. This is because the compiler will automatically with a "None" value for that type, ie a string will be empty "", an int will be 0.
+
+We can add these values based off of their name using dot notation. By using the instance name dot attribute we can set the value stored there. This will be a useful way of storing, retreiving and manipulating data stored within the structs.
 
 ## 02_Removing_Values
 
@@ -17,3 +25,13 @@ Before you start saying that we aren't removing values were setting them to 0, I
 This is because at runtime the structs type definition cannot be changed. This means there is no way for the code to "update" the values a struct holds on the fly. If a struct is not supposed to contain the data the only way to essentually remove it is by setting it to "empty".
 
 ## 03_Methods
+
+This example shows how methods are created and used. While the example is just printing the name of the variable in a preset string, it demenstrates what a method would be used for.
+
+Methods are designed to easily use the same function with any instance of a struct. This example shows that both "new_car", and "another_one" could use the function "print_name" via dot notation.
+
+You can think of methods in a similar way to the "name" variable, as every car will have a ".name", they will also have a ".print_name()". A use case example of when a method could be useful is hashing a password before saving, or calling an api to get rating data.
+
+## Conclusion
+
+Structs are a very useful feature in Go. It may not be the most used, but it will definetly make your life easier when needing to store data of different types together. If they seem complex remember, it is just an accumulation of what we have learned up to this point. The data it is saving is no different then the normal types, it follows the same rules, it is just in a place that can be combined with other data.
