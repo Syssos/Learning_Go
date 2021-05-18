@@ -18,7 +18,8 @@ First we need to create a directory for the project to sit in. You can do that w
 mkdir hello && cd hello
 ```
 
-Once created lets start with the script that starts the main project/program. This is where the main function will live. I will use a file name "Start.go". Inside this script will sit the following code
+Once created lets start with the script that starts the main project/program. This is where the main function will live. I will use a file name "Script.go". Inside this file will sit the following code
+
 ```go
 package main
 
@@ -29,7 +30,7 @@ func main() {
 }
 ```
 
-Once the script is added to the folder we will need to create a module. We can do this with the ``` go mod init ``` command. When initualizing we will want a path that allows for the code to be found, because the my code will be on github I will use a path such as "github.com/Syssos/'name'"
+Once the script is added to the folder we will need to create a module. We can do this with the ``` go mod init ``` command. When initualizing we will want a path that allows for the code to be found, because my code will be on github I will use a path such as "github.com/Syssos/'name'" to plan ahead.
 
 ```
 go mod init github.com/Syssos/hello
