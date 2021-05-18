@@ -3,5 +3,5 @@ package example
 import "fmt"
 
 func Example_func() {
-	fmt.Println()
+	fmt.Println("This is from the package")
 }
