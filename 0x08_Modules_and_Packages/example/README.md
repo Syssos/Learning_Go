@@ -20,9 +20,9 @@ This script outside of the changeing of the package name is nothing new to us. R
 
 Well kind of, In this example the name of the function we created is a capital letter. Why is that important? 
 
-This tells the compiler that the function is exportable, and can be called from outside of the package. Meaning if we were to name the function "example_func()", instead of "Example_func()", we would not be able to call this function from the Script.go file in the root of the module folder.
+This tells the compiler that the function is exportable, and can be called from outside of the package. Meaning if we were to name the function ``` example_func() ```, instead of ``` Example_func() ```, we would not be able to call this function from the Script.go file in the root of the module folder.
 
-This is important to know as it applys to all functions we see in the Go language. For example look at the built in print function we use in this package, "fmt.Println()". The function starts with a capital letter.
+This is important to know as it applys to all functions we see in the Go language. For example look at the built in print function we use in this package, ``` fmt.Println() ```. The function starts with a capital letter.
 
 ## Conclusion
 
