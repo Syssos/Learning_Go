@@ -64,9 +64,9 @@ Let's say we are creating a package that has a lot of code invloved, and we want
 
 This file contains the starting point of our program. After adding the package some changes are required if we are to use it inside of our module. Lets look at the example to see those changes.
 
-The first noticable change is the import statement, we can see a new import "github.com/Syssos/hello/example". To make this make a little more sense lets look at roughly what Go sees ``` module_name_and_location/nested_package_name ```.
+The first noticable change is the import statement, we can see a new import "github.com/Syssos/hello/example". With the package imported we can now call exportable functions from within it. 
 
-With the package now imported we can now use it. Inside of the main function we see that the only line is example.Example_func(). This uses the package we created to print a string to the screen.
+Inside of the main function we see that the only line is example.Example_func(). This uses the package we created to print a string to the screen.
 
 Once all of the changes are made we can now build/install, and run our code in the same manor as above. From inside the "hello/" directory
 
