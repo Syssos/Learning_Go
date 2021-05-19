@@ -25,7 +25,8 @@ Go is an extremely powerful langauge to have in your toolbelt as a developer on 
  	* [0x05_Slices](#0x05_slices)
  	* [0x06_Pointers](#0x06_pointers)
  	* [0x07_Structs](#0x07_structs)
- 	* [0x08_Packages](#0x08_packages)
+ 	* [0x08_Modules_and_Packages](#0x08_modules_and_packages)
+ 	* [0x09_Unit_Tests](#0x09_unit_tests)
  - [Conclusion](#conclusion)
 
 ## Download
@@ -85,35 +86,32 @@ The Mac install of go does essentially the same thing as the linux install, howe
 This should return the current version of go installed.
 
 ## Getting Started
-After we have Go installed we need to have a couple things initialized before we can get into actually writing code. Below I will go over how I initialized the enviornment for this repository, note that there will be a section dedicated to understanding this further when we get into working with external packages. This will cover setting up a local module in order to run the code we write.
+
+The end goal for this repository is to build your skills up to be able to write testable Go packages, and modules, that can be shared on a version control site such as github. To start off however creating a full blown package is not needed. Examples shown in directories 0x00-0x07 were created and run using the ``` go run ``` command, more on that below.
 
 ### Enviornment Setup
-The first thing we need to do is create a location in which we will have the project source code. Lets look at the current repository for example. The Root is "Learing_Go", and our first directory is "0x00_Hello_World"
 
-Now that we have those 2 folders the directory tree should look like it does below
+Modules in Go are usually stored in one folder, to keep everything it will relay on in one place. If you are following along with each directory below is how you would do such without creating modules. For this example I will be using the 00_Hello_World directory.
 
-Learning_Go
-	\\--- 0x00_Hello_World
+Lets say you are following along and make your way into the 00_Hello_World directory, and see our first file containing code. How do we run it?
 
-Now cd to the parent directory of "Learning Go", this is where we will initialize the Go module. We can do this by running the following command
+We would want to start by creating a location on our local machine for the file to run. If you are on linux you can do that with the mkdir command, I will use a folder name "project". Once we have that folder created, navigate inside of it.
 
+Our new location should be
 ```
-go mod init Learning_Go
+project/
 ```
-
-This command is doing some very important things as far setting up an enviornment. After running the command you will notice a "go.mod" file was created in the current directory. This file is super important to Go as it is what manages the dependencies the package you are creating requires. For now however our code only requires built in packages(ie "fmt") so the generic go.mod file will work for us at the moment.
-
-Once the go.mod file is created we should be able to start writing code and storing it in the first folder or in other folders as we make them. For now to keep things simple we will cover a little more on how Go operates before we cover this topic in its full extent.
+Once inside of this directory we are inside of our "enviornemt", when you get to the modules section you will see how directories can be turned into modules. For now this will do just fine. In this directory we can have as many of the example files as we want. Just be sure to specifiy the file name when running or compiling the scripts as seen below.
 
 ### Code Execution
-Once we have the enviornment setup we can start focusing on running the code we write. Lets take a look at running the "Hello_World.go" script, inside the "0x00_Hello_World" directory.
+Once we have the enviornment setup we can start focusing on running the code we write. Lets take a look at running the "00_Hello_World.go" script, inside the "0x00_Hello_World" directory.
 
-Go is an interpreted and compilied langauge, this means we can either run the go script through an interpreter written in Go, or we can compile the code into a binary and execut the file.
+Go is an interpreted and compilied langauge, this means we can either run the go script through an interpreter written in Go, or we can compile the code into a binary and execute the file.
 
 Lets start with running a script.
 
 #### Running
-To run a simple Go script we will make use of the ``` go run [Path/to/file]``` command. This command will tell Go to start an interpreter and execute the script passed in. This is super useful when it comes to testing changes, or finding bugs within a script.
+To run a simple Go script, like many in this repository, we will make use of the ``` go run [Path/to/file]``` command. This command will tell Go to start an interpreter and execute the script passed in. This is super useful when it comes to testing changes, or finding bugs within a script.
 
 For more information on this command check out the link below
 
@@ -146,12 +144,19 @@ In this Directory I will cover what a function is and how we can utilize them in
 Loops and Arrays is dedicated to for loops and how to use them, and what arrays are. These two go side by side as often times you will be using a for loop do to "something" for each item in an array. This Directory covers all the good stuff you need to know for directorys to come that deal with slices, or arrays, heck even strings can be thought of in the same manor as an array...
 
 ## 0x05_Slices
+Slices in Go are very similar to arrays but are far more practical to use. This directory is setup to cover why we as developers can benifit from using slices, and how to go about doing so. From creating, to adding, to removing values from a slices this should cover all the basic we need to know. Slices are extremly usefull so be sure to check out what they are and how they can be used.
 
 ## 0x06_Pointers
+How pointers are used are not much different from programming langauge to programming language. The concept of a pointer is straight forward so there is not much that could change if there were to be differences. If your new to programming spending some time learning how pointers work will benifit you as it is fairly universal information when it comes to working with other languages. If you are a programmer that is just here to learn a new langauge stopping by and reading the material as a refresher it could never hurt.
 
 ## 0x07_Structs
+If you are used to any object oreinted programming langauges then this is where home will feel. While structs do not make Go an object oriented langauge they offer some features that are closely related to this method of programming. Spending time understand structs and methods can greatly increase your ability to make more complex code. While using them wont be nessisary to complete a task, having them there and knowing how to use them can make a world of difference.
 
-## 0x08_Packages
+## 0x08_Modules_and_Packages
+This directory will cover one of the most unique aspects of Go in my opinion, and that is modules and packages. Here we will see how to create shareable code, as well as learn the backbones we need to be able to create much larger and complex programs. While most online material will have you start here, I have it towards the end because the idea of them really only apply once you have a more complex project, and most of whats covered above will fit within one function.
+
+## 0x09_Unit_Tests
+Once we are at the point of writing and creating modules and packages, we will want a way to test all of our code. Thats when the contents of this repository will come into play. Writing unit tests are the best way of adding/changing the code you are writing and ensuring that whatever you are doing does not damage what you are working on. This can be important if you plan on sharing. An update to the code that breaks some functions can leave the people using your code out to dry.
 
 ## Conclusion
 
