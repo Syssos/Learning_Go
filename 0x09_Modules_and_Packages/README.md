@@ -64,7 +64,11 @@ Let's say we are creating a package that has a lot of code invloved, and we want
 
 This file contains the starting point of our program. After adding the package some changes are required if we are to use it inside of our module. Lets look at the example to see those changes.
 
-The first noticable change is the import statement, we can see a new import "github.com/Syssos/hello/example". With the package imported we can now call exportable functions from within it. 
+The first noticable change is the import statement, we can see a new import "github.com/Syssos/hello/example". With the package imported we can now call exportable functions from within it. The next concept I want to touch on is the init function.
+
+Just like the main() function in go the init function has an important role. It will run when the package is first used in our code, becuase our init function is in the main pacakge, it will execute before the main function. This can be an important tool as packages build in complexity and certain things need to be established, like database connections, before the package can be used.
+
+Keep in mind the init function is only called once, meaning if you store code in there to run everytime you call the package, it will not yeild the result you are after.
 
 Inside of the main function we see that the only line is example.Example_func(). This uses the package we created to print a string to the screen.
 
