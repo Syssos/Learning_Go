@@ -120,17 +120,39 @@ or
 
 As we see above a complex number is essentually 2 float variables combined. However when storing a complex number the 2nd argument is seen as an imaginary number. The example for complex numbers outlines that, and also shows us some basic Arithmetic between 2 complex numbers. Please note that any kind of arithmetics will require complex numbers of the same type.
 
-## 05_Type_casting
+## 05_Constants
+
+Constants in Go are variables that are not designed to change. If a you attempt to update a constant somewhere in the Go code after decloration, the compiler will complain. Constants can be a character, string, boolean, or numeric value. As you will see in a later example Go can choose the datatype for us, however constants need to be declared with the keyword const, so the go comiler knows this is a special value that is not intented to change.
+
+## 06_Type_casting
 
 All of the above outlines how important types are to Go, but what if we have a 42 as a string, and need to add it to a 7 thats an int? Well Go lets us to that with "type conversions". This example should look pretty straight forward if you've been following along. We do have to keep one thing in mind however, the dataype conversion **must make sense**. If we try to store a value such as "S" into an int8 or int32 we will get an error, this is because a string can store non-numerical values, which cannot be stored as an int. Even with a string being only "42" the compiler will refuse as it is much more time consuming to skip this checking process, and Go is all about speed.
 
 However the example does outline some working examples of type conversion. This will mainly be used when trying to do some kind of arithmetic calculations on numbers not stored as the same datatype.
 
-## 06_Letting_Go_pick
+## 07_Letting_Go_pick
 
 Now that we have a basic understanding of the datatypes in Go, and know we can change variable types as long as it makes sense, lets look at one of the cool features Go guideve developers. For obvious reasons constantly declaring variable types can be hard to track, or time consuming to write out. Lets be honest, as developers we already do a lot of typing, so the less we have to the better.
 
 With the ":" sign before the "=", we are telling the compiler to assign a datatype to the variable, that makes sense, for us. If we say ``` x := 3.14 ``` the compiler will look at the data we want to save, see that it has a decimal point, and know to save that variable as a float. This is a much more convienent way of creating variables.
+
+## Blank Identifiers
+
+Before we conclude this section I would like to mention blank identifiers(```_```). While they may not be super useful at the moment, they are important to know about. As we expand our code we will run into times we are given more data then we need. Go doesn't allow for us to create variables and not use them, so in situations like this, using the blank indentifier can save use. Below is an example using sudo code.
+
+If you declare 2 variables to store data returned by a function, and only want to use 1, the go compiler will give you an error saying dif was declared and never used.
+```
+sum, dif := SumDif(2, 3)
+
+printf(sum)
+```
+Using a blank identifier will tell the compiler to ingore that value from the function and continue with no errors.
+
+```
+sum, _ := SumDif(2, 3)
+
+printf(sum)
+```
 
 ## Conclusion
 
