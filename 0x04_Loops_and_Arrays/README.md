@@ -88,6 +88,19 @@ Even though the code snippet above is in python is outlines what the forloop in 
 
 Think of how we itterated through arrays in previous examples. We used a for loop with a count, and set the forloop to stop at the same time the array would. While this works it can lead to errors. Range fixes that for us by handling the loop count, based off array length. This is why we do not see a counter being set or incremented, and why it is similar to a for in statement in python. It will do "work" for every item in the array.
 
+## 05_2D_Arrays
+
+Two-Dimensional arrays are the simplest form of a multidimensional array. 2D arrays can have multiple implications in programs. One way to think about them is like a table, and the 2 index numbers will represent row and column locations. In this example we are essentually creating a table that has 2 rows, and 3 columns.
+```
+[
+[43 64 73],
+[23 75 70]
+]
+``` 
+Above is the output from the example, printed a in a little bit of an easier way to visualize a table. If we wanted to get the first item in the second column we could use ``` arr[0][1] ```.
+
+2D arrays can represent all kinds of data. One intresting example of where you may need to use a 2d array is during the creation of a minimap in a video game.
+
 ## Conclusion
 
 This directory outlined for loops and arrays, and hopefully shows the two can go hand in hand. If you want to work with each peice of data in an array, a for loop is a clean and concise way of acheiving it. Aside from arrays for loops will also have a large amount of use cases, weather it be a web application or command line based scripts for loops can be found all over the place. That goes for arrays as well. If any of these topics are still something that you have questions on you should deffinetly continue researching.
