@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestSum(t *testing.T) {
 	cases := []struct{
@@ -12,7 +15,6 @@ func TestSum(t *testing.T) {
 		{5, 2, 7},
 		{0, 2, 2},
 	}
-
 	for _, i := range cases {
 		res := Sum(i.x, i.y)
 		if res != i.sum {
