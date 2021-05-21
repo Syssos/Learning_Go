@@ -8,17 +8,11 @@ Through the struct examples we will be looking at a "car" as an example. Due to 
 
 Maps in Go are a datatype that allows for saving data in Key, value pairs. Maps are a built in associative data type of Go's, in other langauges you may see these refered to as hashes, hash tables, or dictionaries(dicts).
 
-To create a Map we need to utilize another built in function known as [make()](https://www.godesignpatterns.com/2014/04/new-vs-make.html). This is seperate from the built in new() function. While these 2 seem like they do the same job, they do different things and return different datatypes. It's recommended you go check out the differences between the two.
+To create a Map we can utilize another built in function known as [make()](https://www.godesignpatterns.com/2014/04/new-vs-make.html), or we can use composite litterals. Note that make() is seperate from the built in new(). While these 2 seem like they do the same job, they do different things and return different datatypes.
 
-In the example it is not shown but when creating a new map item, we can also declare key, value pairs in the brackets, as seen below.
+Once the map is created we are now able to add values to it. Make() will initialize the map instance, and then return it for us to use. Meaning we can set a value to an index of "key" and it will save the key, value pair into the map, ie ``` mapname['key'] = "value" ```.
 
-```go
-newm = map[string]bool{"ohCool", true}
-```
-
-Once the map is created we are now able to add values to it. Make() will initialize the map instance, and then return it for us to use. Meaning we can set a value to an index of "key" and it will save the ket value pair into the map, ie ``` mapname['key'] = "value" ```.
-
-If we wanted to access the data in the map at index "key", we can refrence it the same as setting the value, without setting anything to it, ie ``` fmt.Println(mapname['key']) ```.
+If we wanted to view the data in the map at index "key", we can refrence it the same as setting the value, just without setting anything to it, ie ``` fmt.Println(mapname['key']) ```.
 
 To remove values in a map we can use the built in delete() function. This will remove the key value pair from a map, based off arguments passed to it. The first argument is the map to remove the pair from, and the second argument is the key to the items to remove.
 
