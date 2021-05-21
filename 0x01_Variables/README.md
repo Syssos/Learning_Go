@@ -1,7 +1,6 @@
 # Variables
-### Dataype Time
-Quick overview:
-	This directory is dedicated to datatypes, below I will outline the datatypes used in the files above. In the table I will give a brief overview of the general datatypes that appear to be present in most programming langauges, however because Go is compiled we have some more flexability then say python when it comes to saving/or storing data. This means that Go will require a little more in-depth knowledge about these dataypes, and we will go over those specifics as we get to them in the examples.
+
+This directory is dedicated to datatypes, below I will outline the datatypes used in the files above. In the table I will give a brief overview of the general datatypes that appear to be present in most programming langauges, however because Go is compiled we have some more flexability then say python when it comes to saving/or storing data. This means that Go will require a little more in-depth knowledge about these dataypes, and we will go over those specifics as we get to them in the examples.
 
 ## Data Types:
 
@@ -130,7 +129,7 @@ All of the above outlines how important types are to Go, but what if we have a 4
 
 However the example does outline some working examples of type conversion. This will mainly be used when trying to do some kind of arithmetic calculations on numbers not stored as the same datatype.
 
-## 07_Letting_Go_pick
+## 07_Composite
 
 Now that we have a basic understanding of the datatypes in Go, and know we can change variable types as long as it makes sense, lets look at one of the cool features Go guideve developers. For obvious reasons constantly declaring variable types can be hard to track, or time consuming to write out. Lets be honest, as developers we already do a lot of typing, so the less we have to the better.
 

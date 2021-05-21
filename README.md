@@ -6,6 +6,7 @@ Go is an extremely powerful langauge to have in your toolbelt as a developer on 
 
  - [Overview](#learning-go)
  - [Table of Contents](#table-of-contents)
+ - [Repo Goal](#repository-goal)
  - [Download](#download)
  - [Installation](#installation)
  	* [Linux](#linux)
@@ -16,18 +17,13 @@ Go is an extremely powerful langauge to have in your toolbelt as a developer on 
  	* [Code Execution](#code-execution)
  		- [Running](#running)
  		- [Compiling](#compiling)
- - [Directories](#directories)
- 	* [0x00_Hello_World](#0x00_hello_world)
- 	* [0x01_Variables](#0x01_variables)
- 	* [0x02_If_Else](#0x02_if_else)
- 	* [0x03_Functions](#0x03_functions)
- 	* [0x04_Loops_and_Arrays](#0x04_loops_and_arrays)
- 	* [0x05_Slices](#0x05_slices)
- 	* [0x06_Pointers](#0x06_pointers)
- 	* [0x07_Structs](#0x07_structs)
- 	* [0x08_Modules_and_Packages](#0x08_modules_and_packages)
- 	* [0x09_Unit_Tests](#0x09_unit_tests)
+ - [Topics](#topics)
  - [Conclusion](#conclusion)
+ - [Extra Sources](#helpful-sources)
+
+## Repository Goal
+
+The goal of this repository is to give any viewers the information they need to start writing go code. I will also personally use it as a refrence if I ever need a refresher on syntax or general usage. Many of the topics covered are also cover in the [Effective Go](https://golang.org/doc/effective_go) documentation. A list of the topics covered can be found under the [Topics](#topics) section.
 
 ## Download
 
@@ -126,41 +122,41 @@ go build [path/to/file]
 
 This will create and place a new executable with the same file name as the script in the current directory.
 
-## Directories
+## Topics
 
-### 0x00_Hello_World
-Hello world is all about the basics. In order for Go code to run there are a couple things required. This Directory covers what they are, and why they are needed. Along side learning the requirements for a script this directory will cover printing to the screen, or standard output. As you will see in the directories to come, this will be a very important concept. Even if you have some programming experiance, I recommend at least crusing through the code to see how Go does this.
+Below is a list of topics covered in this repository. If you are using this repo as a means to learn Go its recommended you start at the top and work your way down(0x00-0x10). This list is here because it will be an easy way to navigate to a specific topic without browsing for them.
 
-### 0x01_Variables
-This Directory is all about varibales and datypes in Go. While most of these variables are the same in concept as other "low level" programming languages its vital to understand how Go stores data in order to write extremely efficent code. This Directory is dedicated to breaking down variables and datatypes, as well as type conversions so you can "have the right type for the job".
-
-### 0x02_If_Else
-This Directory will get you started using if statement. It covers everything from a basic if else, up to a switch case. Which as you will see is essentually a fancy way of doing a bunch of if else statements. Why would you want a bunch of if else statements? Easy, there extremly useful. Not only will they be useful in different types of projects, but they can be used to check for errors, as you will see in 0x03_Functions. 
-
-### 0x03_Functions
-In this Directory I will cover what a function is and how we can utilize them in our code. We will also see how functions can be imported from another package, and even how to use a package from github. Functions are workhorse behind most of the projects you will work on, as they allow you to breakup code and make it easier to read.
-
-## 0x04_Loops_and_Arrays
-Loops and Arrays is dedicated to for loops and how to use them, and what arrays are. These two go side by side as often times you will be using a for loop do to "something" for each item in an array. This Directory covers all the good stuff you need to know for directorys to come that deal with slices, or arrays, heck even strings can be thought of in the same manor as an array...
-
-## 0x05_Slices
-Slices in Go are very similar to arrays but are far more practical to use. This directory is setup to cover why we as developers can benifit from using slices, and how to go about doing so. From creating, to adding, to removing values from a slices this should cover all the basic we need to know. Slices are extremly usefull so be sure to check out what they are and how they can be used.
-
-## 0x06_Pointers
-How pointers are used are not much different from programming langauge to programming language. The concept of a pointer is straight forward so there is not much that could change if there were to be differences. If your new to programming spending some time learning how pointers work will benifit you as it is fairly universal information when it comes to working with other languages. If you are a programmer that is just here to learn a new langauge stopping by and reading the material as a refresher it could never hurt.
-
-## 0x07_Structs
-If you are used to any object oreinted programming langauges then this is where home will feel. While structs do not make Go an object oriented langauge they offer some features that are closely related to this method of programming. Spending time understand structs and methods can greatly increase your ability to make more complex code. While using them wont be nessisary to complete a task, having them there and knowing how to use them can make a world of difference.
-
-## 0x08_Modules_and_Packages
-This directory will cover one of the most unique aspects of Go in my opinion, and that is modules and packages. Here we will see how to create shareable code, as well as learn the backbones we need to be able to create much larger and complex programs. While most online material will have you start here, I have it towards the end because the idea of them really only apply once you have a more complex project, and most of whats covered above will fit within one function.
-
-## 0x09_Unit_Tests
-Once we are at the point of writing and creating modules and packages, we will want a way to test all of our code. Thats when the contents of this repository will come into play. Writing unit tests are the best way of adding/changing the code you are writing and ensuring that whatever you are doing does not damage what you are working on. This can be important if you plan on sharing. An update to the code that breaks some functions can leave the people using your code out to dry.
+- [Printing](https://github.com/Syssos/Learning_Go/tree/main/0x00_Hello_World#00_hello_world)
+- [Comments](https://github.com/Syssos/Learning_Go/tree/main/0x03_Functions#comments)
+- [Variables](https://github.com/Syssos/Learning_Go/tree/main/0x01_Variables#variables)
+- [Control Structures]()
+	* [if else](https://github.com/Syssos/Learning_Go/tree/main/0x02_If_Else#if-else)
+	* [for](https://github.com/Syssos/Learning_Go/tree/main/0x04_Loops_and_Arrays#00_for_loop)
+	* [switch](https://github.com/Syssos/Learning_Go/tree/main/0x02_If_Else#02_switch)
+- [Functions](https://github.com/Syssos/Learning_Go/tree/main/0x03_Functions#00_functions)
+- [Return](https://github.com/Syssos/Learning_Go/tree/main/0x03_Functions#02_return)
+- [Datatypes]()
+	* [string](https://github.com/Syssos/Learning_Go/tree/main/0x01_Variables#00_strings)
+	* [int](https://github.com/Syssos/Learning_Go/tree/main/0x01_Variables#01_ints)
+	* [float](https://github.com/Syssos/Learning_Go/tree/main/0x01_Variables#02_floats)
+	* [Boolean](https://github.com/Syssos/Learning_Go/tree/main/0x01_Variables#03_booleans)
+	* [array](https://github.com/Syssos/Learning_Go/tree/main/0x04_Loops_and_Arrays#02_arrays)
+	* [slice](https://github.com/Syssos/Learning_Go/tree/main/0x05_Slices#slices)
+	* [struct](https://github.com/Syssos/Learning_Go/tree/main/0x07_Structs_and_Maps#structs)
+	* [map](https://github.com/Syssos/Learning_Go/tree/main/0x07_Structs_and_Maps#00_maps)
+	* [pointers](https://github.com/Syssos/Learning_Go/tree/main/0x06_Pointers#pointers)
+	* [blank identifier](https://github.com/Syssos/Learning_Go/tree/main/0x01_Variables#blank-identifiers)
+- [Composite Literals](https://github.com/Syssos/Learning_Go/tree/main/0x01_Variables#07_Composite)
+- [Init Function](https://github.com/Syssos/Learning_Go/tree/main/0x09_Modules_and_Packages#init-function)
+- [Methods](https://github.com/Syssos/Learning_Go/tree/main/0x08_Methods_and_Interfaces#00_methods)
+- [Interfaces](https://github.com/Syssos/Learning_Go/tree/main/0x08_Methods_and_Interfaces#01_interfaces)
+- [Errors](https://github.com/Syssos/Learning_Go/tree/main/0x03_Functions#04_go_errors)
 
 ## Conclusion
 
-Because the repo is not finished I do not want to add a conclusion yet, Once the repo is finished the conclusion will be updated.
+Go is a langauge that can be vital to giving you the edge over your competitors. The syntax is relativly forgiving and straight forward. While the package management can take a little more time to get used to then say javascript or python that can utilize npm or pip, it can be more powerful in thewhen it comes to the share-ability of code. Theres a boat load of reasons Go is amazing, but I think the best way for you to find out is to get to writing some code.
+
+## Helpful Sources
 
 
 [Back to Top](#learning-go)

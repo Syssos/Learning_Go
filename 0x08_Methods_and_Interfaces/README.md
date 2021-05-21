@@ -18,7 +18,7 @@ When declaring the method we use ``` func (instance_name struct_type) function_n
 
 We can use "instance_name" inside of the method function to retreive a variable specific to the struct that called it. We see this in the example as each instance of car has a different output, when the method is called. 
 
-## Interfaces
+## 01_Interfaces
 
 Interfaces are a handy way to name a collection of methods. To help make this concept make a little more sense, lets look at this in a different more relatable manor then the example shows. 
 

@@ -6,7 +6,7 @@ When making more complex programs, repeating tasks, or large chunks of code can 
 
 This is where functions come in, this directory will cover the basics of functions, and some **import**ant uses of them.
 
-## Function Comments
+## Comments
 
 In the examples above we look at a new way of writing comments. This style of comment is known as a style block. This is the point in which we start using functions in our examples, and to keep things organized these comments will be used from here on out. The following code block will demenstrate how the comments are layed out, its fairly simple.
 ```go
