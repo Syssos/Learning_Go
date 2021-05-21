@@ -76,7 +76,7 @@ A good use case for this is demenstrated in 01_Imports, when we set the function
 
 ## 04_Go_Errors
 
-One of the most benificial features of a return statement is that it can return multiple argurments. The reason multiple return arguments can be benifical is because it allows us to check for errors within our code. Go has no try, except statements, in other terms its up to the developer to check for when the code is not working.
+One of the most benificial features of a return statement is that it can return multiple argurments. This is benifical because it allows us to check for errors within our code. Go has no try, except statements, in other terms its up to the developer to check for when the code is not working.
 
 In this example we see we set the function equal to sum, and err. The sum of the two values we pass the function mulThese will be saved into "sum", and the error value will be saved into err.
 
