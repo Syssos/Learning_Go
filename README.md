@@ -1,6 +1,6 @@
 # Learning Go
 
-Go is an extremely powerful langauge to have in your toolbelt as a developer on any level. Go has amazing built in packages and an amazing method of utilizing external packages. Go's goal is to create lightweight executables without the hastles, or drawbacks other lower level langanges provide. It deals with garbage collection (which coming from C is a very nice touch), and will hold you responsible for imports or variables that are declared and never used. This helps limit the amount of resources required from the machine during code execution. Those are just some of the benefits Go has to offer, this repository will cover the basics of Go and a majority of the benifits Go offers developers.
+Go is an extremely powerful langauge to have in your toolbelt as a developer on any level. Go's goal is to create lightweight executables without the hastles, or drawbacks other programming langanges provide. It deals with garbage collection(which coming from C is a very nice touch). Aside from garabge collection go was designed to utilize modern computer cpus, allowing us to write code that can be executed and ran faster.
 
 ## Table of Contents
 
