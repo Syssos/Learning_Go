@@ -16,7 +16,7 @@ Compaired to the files in the last directory hello_world, it would appear as the
 
 Declaring a variable will work pretty much the same way for every datatype in this directory, we do that by using the key word ``` var ```. This keyword is telling the compiler, "Hey, this next word is going to be important, it'll represent some data. Hold on to it so when I need that data I can refrence it.". This means whatever word, character, or series of characters(starting with a letter) comes after "var", will be the "variable name". After the variable name, we tell the compiler what type of data this variable will store. This is where datatypes come into play.
 
-## 00_Strings [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/00_Strings.go)
+## Strings [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/00_Strings.go)
 A string is any sequance of characters understandable by the computer, usually in the form of Key Words(like "apple" or "Save"), names, sentences, address, etc. There are many reasons we would want to modify strings, however this can become a more challanging topic depending on what you are after so for this file we will keep it fairly light.
 
 In this example strings are printed and combined(also known as concatenated). Here are some key take aways from what the example is demonstrating.
@@ -31,7 +31,7 @@ In this example strings are printed and combined(also known as concatenated). He
 
 We will cover using strings in a more complex manor later on. As long as you have a basic understanding of strings we should be fine for now moving forward. If you are new to programming and want to challange yourself a little bit, try to save the string ``` Sure, Monday's are the "best" day of the week ``` into a variable with the name "Monday". To help you out a little bit, if you do research on this, it should lead you to articles on "escaping" a character in a string.
 
-## 01_Ints [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/01_Ints.go)
+## Ints [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/01_Ints.go)
 
 **Why so many???**
 
@@ -72,7 +72,7 @@ https://www.tutorialspoint.com/go/go_data_types.htm
 
 https://docs.microsoft.com/en-us/cpp/cpp/data-type-ranges?view=msvc-160  
 
-## 02_Floats [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/02_Floats.go)
+## Floats [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/02_Floats.go)
 Like the int dataype, the number after the keyword float is in refrence to the amount of storage space allocated to the variable. Due to the nature of floats, more space is required to save everything before and after the decimal point, meaning the amount of bytes needed to represent a number is greater. This is why we do not see a float8 or float16 like we did with integars.
 
 Floats are composed of ints, so lets say we have a float32, lets break that down in a more understandable way
@@ -100,13 +100,13 @@ Below is a chart for float sizes
 | "float32" |   4   | 3.4E +/- 38 (7 digits)   |
 | "float64" |   8   | 1.7E +/- 308 (15 digits) |
 
-## 03_Booleans [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/03_Booleans.go)
+## Booleans [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/03_Booleans.go)
 
 Booleans are a rather simple datatype as it is a representation of true or false. They are important to touch base on however because the relevance of true or false in programming is pretty vast. As you will see in this example the "if" statement is checking **if the variable is true or false**, if it is true it will run the code in the brackets following. If it is false it will move on to the next part of the code.
 
 The concept of true or false will be seen all over the place in Go code. While you may not always be setting a variable to true or false, comparisons that guide the codes functionality will heavily rely on this concept.
 
-## 04_Complex [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/04_complex.go)
+## Complex [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/04_complex.go)
 
 Complex numbers in Go are not something you will need to worry about when writing day to day Go scripts. However it is a concept we should touch on so your aware of their presence in the langauge.
 
@@ -120,17 +120,17 @@ or
 
 As we see above a complex number is essentually 2 float variables combined. However when storing a complex number the 2nd argument is seen as an imaginary number. The example for complex numbers outlines that, and also shows us some basic Arithmetic between 2 complex numbers. Please note that any kind of arithmetics will require complex numbers of the same type.
 
-## 05_Constants [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/05_constants.go)
+## Constants [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/05_constants.go)
 
 Constants in Go are variables that are not designed to change. If a you attempt to update a constant somewhere in the Go code after decloration, the compiler will complain. Constants can be a character, string, boolean, or numeric value. As you will see in a later example Go can choose the datatype for us, however constants need to be declared with the keyword const, so the go comiler knows this is a special value that is not intented to change.
 
-## 06_Type_casting [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/06_Type_casting.go)
+## Type_casting [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/06_Type_casting.go)
 
 All of the above outlines how important types are to Go, but what if we have a 42 as a string, and need to add it to a 7 thats an int? Well Go lets us to that with "type conversions". This example should look pretty straight forward if you've been following along. We do have to keep one thing in mind however, the dataype conversion **must make sense**. If we try to store a value such as "S" into an int8 or int32 we will get an error, this is because a string can store non-numerical values, which cannot be stored as an int. Even with a string being only "42" the compiler will refuse as it is much more time consuming to skip this checking process, and Go is all about speed.
 
 However the example does outline some working examples of type conversion. This will mainly be used when trying to do some kind of arithmetic calculations on numbers not stored as the same datatype.
 
-## 07_Composite [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/07_Composite.go)
+## Composite [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/07_Composite.go)
 
 Now that we have a basic understanding of the datatypes in Go, and know we can change variable types as long as it makes sense, lets look at one of the cool features Go guideve developers. For obvious reasons constantly declaring variable types can be hard to track, or time consuming to write out. Lets be honest, as developers we already do a lot of typing, so the less we have to the better.
 
