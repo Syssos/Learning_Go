@@ -4,7 +4,7 @@ Pointers are an amazing little method to save the address of a variable. This ca
 
 When working with a function we declare any arguemts and the arguments type in the function decloration. This is because when passing a function a variable, the variable data is used, to create a new instance.
 
-## 00_Pointers
+## Pointers [</>](V)
 
 To better understand pointers lets break down this example using more code.
 

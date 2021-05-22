@@ -60,7 +60,7 @@ The code within this directory is what composes the package that expands our cod
 
 Let's say we are creating a package that has a lot of code invloved, and we want to break it up into 3 major categories. Loops, syscalls, requests, are the 3 categories we've decided on going with. We can create a 'name'.go file for each and within it place the corresponding code. As long as each page starts with ``` package project_name ``` the functions will be able to interact with eachother as if they are in the same file.
 
-## Script
+## Script [</>](https://github.com/Syssos/Learning_Go/blob/main/0x09_Modules_and_Packages/Script.go)
 
 This file contains the starting point of our program. After adding the package some changes are required if we are to use it inside of our module. Lets look at the example to see those changes.
 

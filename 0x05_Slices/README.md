@@ -6,20 +6,20 @@ Slices in Go are more common to use then array's as slices have no set length. A
 
 Sense a slice is easier to work with we will use them more in the code we write. This directory will cover using a slice, adding, and removing items, as well as accessing specific locations within a slice. The examples above will be critical to understanding what the description is talking about, so be sure to take a look at the example before/or after reading the description to get a clear picture of whats being discussed.
 
-## 00_Slices
+## Slices [</>](https://github.com/Syssos/Learning_Go/blob/main/0x05_Slices/00_Slices.go)
 As explained above slices work in similar ways to an array. This example will cover declaring and printing a slice.
 
 We can see that when declaring the slice we use the array arr, that is because the slice we are creating will use that array. If we created the slice without using the parrent array we would have to manually reassign the values into it, as if we were creating an array.
 
 Go has a nifty built in short hand method of telling the compiler what items from the array to use when making the slice. In the example we start creating the slice in a similiar mannor as an array, however we set it equal to the parent array with some numbers in a bracket next to it ``` arr[0:6] ```. Those numbers are refrencing which indexes from the parent array, to copy over.
 
-## 01_Start
+## Start [</>](https://github.com/Syssos/Learning_Go/blob/main/0x05_Slices/01_Start.go)
 
 In this example we cover the start of a slice. Every slice or array will start at index 0. This makes it a pretty easy task to get the first value of a slice or array.
 
 The code in this example tells the story for us. We see multiple slices have been created and the first value can always be accessed with 0
 
-## 02_End
+## End [</>](https://github.com/Syssos/Learning_Go/blob/main/0x05_Slices/02_end.go)
 
 This example shows that working with the end of the slice is a little more complicated as the number isn't always a set. That raises the question as to how to work around that. The answer is the built in len() function. The length function will return an integar value of the number of items in the slice.
 
@@ -35,13 +35,13 @@ sli[2] = 42
 
 If we put the len of the slice in sli, sli[3], we would get an out of range error because that value hiigher then the last stored value.
 
-## 03_Append
+## Append [</>](https://github.com/Syssos/Learning_Go/blob/main/0x05_Slices/03_Append.go)
 
 The benifit of working with slices is we can easily change the amount of values it holds by appending values. If we are working with set size arrays, we cannot say "hey add this value". The comiler will give us an out of range error much like printing the slice at index slice length.
 
 To append an item to a slice we use the append function. The first argument taken is the slice to append to, and the second is the value to append. Go does a pretty good job at getting that value in the slice if its of the same type. Thankfully Go does the leg work on this one.
 
-## 04_Remove
+## Remove [</>](https://github.com/Syssos/Learning_Go/blob/main/0x05_Slices/04_Remove.go)
 
 This example highlights removing a value from a slice, and some good practices to keep in mind. Due to the way slices and array's are stored in memory they will most likely be clumped together, added one right after the other, resulting in an ordered set of values. When removing a value we dont want to have an empty spot in memory, seporating the values.
 

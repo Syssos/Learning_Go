@@ -4,7 +4,7 @@
 
 Unit tests can be extremely helpful for making sure code functionality doesn't break while adding or changing features in a program. Testing code is a common thing for programmers to want to do, so the developers of Go have created a way to do that with a built in package known as "testing". The testing package will contain a majority of the tools we will need for testing our code. This directory will overview some of those tools so you can get to testing your code.
 
-## 00_add.go
+## add [</>](https://github.com/Syssos/Learning_Go/blob/main/0x10_Unit_Tests/00_add.go)
 
 This example is a pretty short one, containing a function, Sum, and the main function. We can see that the Sum function takes 2 int arguments and will return an int. The main function is responsible for printing the result of the Sum function to the screen.
 
@@ -14,7 +14,7 @@ When using the "testing" package, the main objective is to ensure a specific fun
 
 Usually making sure the output that the user would see like a returned value is more important. Which is where these tests come into play.
 
-## 01_add_test.go
+## add_test [</>](https://github.com/Syssos/Learning_Go/blob/main/0x10_Unit_Tests/01_add_test.go)
 
 When creating a test file we want to name it ending in "\_test". The reason for that is because when working within a module's or package's folder, we can run ``` go test . ``` and all of the files ending with the test suffix will run. If no errors are found then we should see an output of ``` ok      github.com/Syssos/unit_t        0.001s ```.
 

@@ -7,7 +7,7 @@ Unlike if statements there is no code that runs if the condition is false, so if
 
 Arrays are also very useful. They group together chunks of data under one variable name, this could be a list a names, or maybe a list of credit card numbers. In this directory we will see how we can use them, and share them with other parts of our code.
 
-## 00_For_Loop
+## For_Loop [</>](https://github.com/Syssos/Learning_Go/blob/main/0x04_Loops_and_Arrays/00_For_loop.go)
 A for loop in Go is essentually the only kind of loop that will really be used. This is because depending on how you use it you can get the functionality of multiple types of loops in other languages. This example outlines the classic use case of a for loop. In the for loop decloration we see something interesting happening so lets use sudo code to make it a little easier to understand.
 
 ```
@@ -28,13 +28,13 @@ This is because when the counter is at 10 the condition statement will look like
 ```
 This statement will result in false, because 10 is not less then 10 but equal.
 
-## 01_While_but_For
+## While_but_For [</>](https://github.com/Syssos/Learning_Go/blob/main/0x04_Loops_and_Arrays/01_While_but_For.go)
 
 While loops are another form of loop that works without declaring the count variable or how it increments. Instead a while loop will loop while what in the condition section evaluates to true.
 
 In the example we see that the count variable is incremented as the last thing inside the brackets. This is because the for loops decloration no longer handles that task. If we did not increment the count ourselves, outside of the for decloration, then we would have a loop that runs indefinetly as the condition will always result in true. Some cases will require loops that run indefinetly, or until the condition is changed to say otherwise.
 
-## 02_Arrays
+## Arrays [</>](https://github.com/Syssos/Learning_Go/blob/main/0x04_Loops_and_Arrays/02_Arrays.go)
 
 Arrays in Go are datatypes, that allow us to store a collection of other types of data, such as ints or strings. They are handy when you have something like a list of names or id numbers you need to save.
 
@@ -57,7 +57,7 @@ Above is a chart that represents roughly how a computer will store an array. The
 
 This allows us to pull data out of a list based off index. Lets say we want the word 'super' the third word from the list, arr[2] will give us this because arrays start at 0. When the compiler see's arr[2] it will start at the first location in memory for the arr array(0x8130) and then move forward until it gets to the 3rd address in memory that is tied to that array(0x8132).
 
-## 03_Arrays_and_Functions
+## Arrays_and_Functions [</>](https://github.com/Syssos/Learning_Go/blob/main/0x04_Loops_and_Arrays/03_Arrays_and_functions.go)
 
 There will be times were we need some work done on an array, and want to create a function to handle it for us. This example shows how we can pass an array to a function. Simliar to how we pass other dataypes to a function we must declare a variable name and a datatype. In this example we see 2 different function calls, one using a set length arrays as arguments and another using no set length arrays
 
@@ -76,7 +76,7 @@ The code above is an example of returning a new array instead of an int. Note th
 
 The code above will have errors if you try to run it, this is because the arguments are declared and never used. However it is recommended that if your fuzzy on this topic at all that you play around with it. Google every error you run in to and try to get a sense of what the compiler will want or is asking for.
 
-## 04_Arrays_in_range
+## Arrays_in_range [</>](https://github.com/Syssos/Learning_Go/blob/main/0x04_Loops_and_Arrays/04_Arrays_in_range.go)
 
 Lets recap 02_Arrays breifly. Arrays are stored in memory with an address to keep track of the data. This must mean there is a start and end to the array.
 
@@ -88,7 +88,7 @@ Even though the code snippet above is in python is outlines what the forloop in 
 
 Think of how we itterated through arrays in previous examples. We used a for loop with a count, and set the forloop to stop at the same time the array would. While this works it can lead to errors. Range fixes that for us by handling the loop count, based off array length. This is why we do not see a counter being set or incremented, and why it is similar to a for in statement in python. It will do "work" for every item in the array.
 
-## 05_2D_Arrays
+## 2D_Arrays [</>](https://github.com/Syssos/Learning_Go/blob/main/0x04_Loops_and_Arrays/05_2D_Arrays.go)
 
 Two-Dimensional arrays are the simplest form of a multidimensional array. 2D arrays can have multiple implications in programs. One way to think about them is like a table, and the 2 index numbers will represent row and column locations. In this example we are essentually creating a table that has 2 rows, and 3 columns.
 ```

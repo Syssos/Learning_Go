@@ -4,7 +4,7 @@
 
 Methods in Go are basically short hand ways of running a function designed to work with a specific struct. In the examples that follow well cover why and how methods are benificial for us as developers.
 
-## 00_Methods
+## Methods [</>](https://github.com/Syssos/Learning_Go/blob/main/0x08_Methods_and_Interfaces/00_Methods.go)
 
 This example shows how methods are created and used. While the example is just printing the name of the "car" in a preset string, it demenstrates what a method would be used for.
 
@@ -18,7 +18,7 @@ When declaring the method we use ``` func (instance_name struct_type) function_n
 
 We can use "instance_name" inside of the method function to retreive a variable specific to the struct that called it. We see this in the example as each instance of car has a different output, when the method is called. 
 
-## 01_Interfaces
+## Interfaces [</>](https://github.com/Syssos/Learning_Go/blob/main/0x08_Methods_and_Interfaces/01_Interfaces.go) 
 
 Interfaces are a handy way to name a collection of methods. To help make this concept make a little more sense, lets look at this in a different more relatable manor then the example shows. 
 

@@ -4,7 +4,7 @@ Structs, or structures in Go are very handy little methods of clumping together 
 
 Through the struct examples we will be looking at a "car" as an example. Due to the nature of a car this will let us use a combonation of datatypes.
 
-## 00_Maps
+## Maps [</>](https://github.com/Syssos/Learning_Go/blob/main/0x07_Structs_and_Maps/00_Maps.go)
 
 Maps in Go are a datatype that allows for saving data in Key, value pairs. Maps are a built in associative data type of Go's, in other langauges you may see these refered to as hashes, hash tables, or dictionaries(dicts).
 
@@ -16,7 +16,7 @@ If we wanted to view the data in the map at index "key", we can refrence it the 
 
 To remove values in a map we can use the built in delete() function. This will remove the key value pair from a map, based off arguments passed to it. The first argument is the map to remove the pair from, and the second argument is the key to the items to remove.
 
-## 01_Structs
+## Structs [</>](https://github.com/Syssos/Learning_Go/blob/main/0x07_Structs_and_Maps/01_Structs.go)
 
 In this example we go over how structs can be utilized to hold different types of data. To start things off you may have noticed that the structure decloration is outside of the main function. Structures are declared outside of the main function for an important reason. It allows for methods. As you will see in the last example methods are a very useful feature to have when working with structs.
 
@@ -24,13 +24,13 @@ When creating the struct instance new_car, we see that the variables in the brac
 
 The following example outlines how values can be added with a little more "accuracy" 
 
-## 02_Adding_Values
+## Adding_Values [</>](https://github.com/Syssos/Learning_Go/blob/main/0x07_Structs_and_Maps/02_Adding_Values.go)
 
 When creating an instance of a struct, having data to fill the attributes is not required. This is because the compiler will automatically with a "None" value for that type, ie a string will be empty "", an int will be 0.
 
 We can add these values based off of their name using dot notation. By using the instance name dot attribute we can set the value stored there. This will be a useful way of storing, retreiving and manipulating data stored within the structs.
 
-## 03_Removing_Values
+## Removing_Values [</>](https://github.com/Syssos/Learning_Go/blob/main/0x07_Structs_and_Maps/03_Removing_Values.go)
 
 Before you start saying that we aren't removing values were setting them to 0, I just want to say, thats exactly what's happening in this example. The reason for that is because we cannot actually remove the "Ratings" attribute from the struct, without saving the data into another struct that doesn't contain it.
 

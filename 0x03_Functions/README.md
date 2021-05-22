@@ -18,7 +18,7 @@ In the examples above we look at a new way of writing comments. This style of co
 ```
 
 
-## 00_Functions
+## Functions [</>](https://github.com/Syssos/Learning_Go/blob/main/0x03_Functions/00_Functions.go)
 
 In this example we look at declaring, and calling a function. We declare a function by using the Go keyword "func".
 
@@ -27,7 +27,7 @@ The words following func is a name of our choice and it is how we will refrence 
 We declare multiple functions in this example but note that the main function is still part of the code, and is the entry point in which we will begin.
 
 
-## 01_Imports
+## Imports [</>](https://github.com/Syssos/Learning_Go/blob/main/0x03_Functions/01_Imports.go)
 
 While creating functions or a collection of functions is really our end result as devolopers, Go gives us the option to utilize functions in a way that set's it apart. Like most laguages Go offers built in librarys we can take advantage of, for example "fmt". We've been importing it this whole time so we can print stuff to the screen. 
 
@@ -52,7 +52,7 @@ guesslanguage.Guess("This should output english, at least I think it will, I and
 Hopefully this outlines the power Go provides developers when it comes to shareing code, and creating more and more powerful programs. If we were to write a program that took some text and translated it into another langauge, a package like this could be utilized to cut back on the amount of code we would have to write in order to make it happen.
 
 
-## 02_Return
+## Return [</>](https://github.com/Syssos/Learning_Go/blob/main/0x03_Functions/02_Return.go)
 
 Return is one of the key fetures of a function that makes them useful. With a a return statement you can make a function that takes some data, and turns it into a new set of data. The name explains it pretty well, it will return the data to the function call.
 
@@ -74,7 +74,7 @@ above is an example of what the return statement would look like.
 
 A good use case for this is demenstrated in 01_Imports, when we set the function to a variable lang and err. If there was an issue in that function the error value would not be nil, and we would be able to print what the error message is. This is a good way to handle issues that could arise in a program.
 
-## 04_Go_Errors
+## Go_Errors [</>](https://github.com/Syssos/Learning_Go/blob/main/0x03_Functions/03_Go_Errors.go)
 
 One of the most benificial features of a return statement is that it can return multiple argurments. This is benifical because it allows us to check for errors within our code. Go has no try, except statements, in other terms its up to the developer to check for when the code is not working.
 
@@ -100,7 +100,7 @@ if x != 0 && y != 0 {
 }
 ```
 
-## 05_Panic.go
+## Panic [</>](https://github.com/Syssos/Learning_Go/blob/main/0x03_Functions/04_Panic.go)
 
 Errors in Go are an efficient way to handle errors that are minor to a programs opperation ability, but what if we are making a program that, lets say writes data to a file. While opening the file to write the data to, we run into an error. If the code can't access the file it can't do what it needs to. What do we as developers do?
 

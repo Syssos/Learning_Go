@@ -1,4 +1,4 @@
-# 00_Package
+# Package
 
 ## Overview
 
@@ -12,7 +12,7 @@ import "github.com/Syssos/hello/example"
 
 where "github.com/Syssos/hello" is the module name, also what we used for the go mod init command, and "example" is the name of the package.
 
-## pretty_print
+## pretty_print [</>](https://github.com/Syssos/Learning_Go/blob/main/0x09_Modules_and_Packages/example/pretty_print.go)
 
 This file contains the entirety of our package. If we were to want to add more files to help manage the readability of the package thats expanding, we can add those files in this directory. Just ensure those files start with the line package 'package_name'.
 
