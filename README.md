@@ -126,7 +126,7 @@ This will create and place a new executable with the same file name as the scrip
 
 Below is a list of topics covered in this repository. If you are using this repo as a means to learn Go its recommended you start at the top and work your way down(0x00-0x10). This list is here because it will be an easy way to navigate to a specific topic without browsing for them.
 
-- [Printing](https://github.com/Syssos/Learning_Go/tree/main/0x00_Hello_World#00_hello_world)
+- [Printing](https://github.com/Syssos/Learning_Go/tree/main/0x00_Hello_World#hello_world)
 - [Comments](https://github.com/Syssos/Learning_Go/tree/main/0x03_Functions#comments)
 - [Variables](https://github.com/Syssos/Learning_Go/tree/main/0x01_Variables#variables)
 - [Control Structures](#topics)
