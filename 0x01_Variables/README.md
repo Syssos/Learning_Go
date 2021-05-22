@@ -11,12 +11,12 @@ This directory is dedicated to datatypes, below I will outline the datatypes use
 | "Float"   | A float is the datatype that represents numbers with a decimal point. For example "3.14" |
 | "Boolean" | A Boolean is the representation of True or False. The Boolean datatype will consist of those 2 predefined constants |
 
-## Variables [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/00_Strings.go)
+## Variables 
 Compaired to the files in the last directory hello_world, it would appear as there is a lot more code in this file, while there is some truth to that there really is only one or two new concepts.
 
 Declaring a variable will work pretty much the same way for every datatype in this directory, we do that by using the key word ``` var ```. This keyword is telling the compiler, "Hey, this next word is going to be important, it'll represent some data. Hold on to it so when I need that data I can refrence it.". This means whatever word, character, or series of characters(starting with a letter) comes after "var", will be the "variable name". After the variable name, we tell the compiler what type of data this variable will store. This is where datatypes come into play.
 
-## 00_Strings [</>]()
+## 00_Strings [</>](https://github.com/Syssos/Learning_Go/blob/main/0x01_Variables/00_Strings.go)
 A string is any sequance of characters understandable by the computer, usually in the form of Key Words(like "apple" or "Save"), names, sentences, address, etc. There are many reasons we would want to modify strings, however this can become a more challanging topic depending on what you are after so for this file we will keep it fairly light.
 
 In this example strings are printed and combined(also known as concatenated). Here are some key take aways from what the example is demonstrating.
