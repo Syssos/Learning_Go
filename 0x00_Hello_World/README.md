@@ -27,7 +27,7 @@ func main() {...}
 
 Every Go program needs to start within the main function.
 
-## Hello_World [</>](http://google.com.au/)
+## Hello_World [</>](https://github.com/Syssos/Learning_Go/blob/main/0x00_Hello_World/00_Hello_World.go)
 Now that we have a general Idea of the basics a Go script needs, lets get into writing some code. In this file we see the package, import, and main function decloration lines of code mentioned above, however we see something in the main function that we didn't go over yet, so lets do that now.
 
 ```go
@@ -53,7 +53,7 @@ how a computer sees it
 
 fmt.Println
 
-## Verbs
+## Verbs [</>](https://github.com/Syssos/Learning_Go/blob/main/0x00_Hello_World/01_Verbs.go)
 In this file we see 2 new things, the first one is a new print function, Printf, the second is a "%v" in one of the arguments we hand it.
 
 The reason we went with a new print function from fmt, is so we had access to Verbs. A Verb in Go is essentually a placeholder within a string, that will then be later replaced with some kind of value. In the example we see that there are 2 sets of strings in quotes, seperated by a comma being passed to the printf function. The first being "%v World!", and the second being "Hello". The first string is the string we want the function to print, the second is the value we want to replace the "%v" with.
@@ -62,7 +62,7 @@ All said and done the printf function will return a string that reads, "Hello Wo
 
 "Oh My World!"
 
-## Double_Verbs
+## Double_Verbs [</>](https://github.com/Syssos/Learning_Go/blob/main/0x00_Hello_World/02_Double_Verbs.go)
 In 01_Verbs we saw that we can use %v to insert one string into another. What if we wanted more, so we could do things like print a greeting. This example shows how that can be acheived.
 
 When using the printf function we can use as many verbs as we'd like, however we need to make sure we pass the same number of arguments. To little or to many arguments can result in an error, an easier way to look at what is going on is if we use "sudo code" or "Fake code" to better explain what is happening
