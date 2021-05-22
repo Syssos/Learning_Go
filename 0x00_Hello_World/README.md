@@ -27,7 +27,7 @@ func main() {...}
 
 Every Go program needs to start within the main function.
 
-## Hello_World [<img src="https://img.icons8.com/ios/452/source-code.png">](http://google.com.au/)
+## Hello_World [<img src="https://img.icons8.com/ios/452/source-code.png" width="15px" height="15px">](http://google.com.au/)
 Now that we have a general Idea of the basics a Go script needs, lets get into writing some code. In this file we see the package, import, and main function decloration lines of code mentioned above, however we see something in the main function that we didn't go over yet, so lets do that now.
 
 ```go
