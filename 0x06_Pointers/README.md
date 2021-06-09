@@ -1,12 +1,12 @@
 # Pointers
 
-Pointers are an amazing little method to save the address of a variable. This can be helpful for multiple reasons, but to understand lets go back to how variables are passed in functions.
+Pointers are an amazing little method to save the address of a variable. This can be helpful for multiple reasons, but to understand let's go back to how variables are passed in functions.
 
-When working with a function we declare any arguemts and the arguments type in the function decloration. This is because when passing a function a variable, the variable data is used, to create a new instance.
+When working with a function we declare any arguments and the arguments type in the function declaration. This is because when passing a function to a variable, the variable data is used to create a new instance.
 
 ## Pointers [</>](https://github.com/Syssos/Learning_Go/blob/main/0x06_Pointers/00_Pointers.go)
 
-To better understand pointers lets break down this example using more code.
+To better understand pointers let's break down this example using more code.
 
 ### code
 ``` go
@@ -29,11 +29,11 @@ func no_point(new_str string) {
 
 **<0xc000010260> This is a test**
 
-If the code above is ran we will see 2 different memory address being printed, aside the same string. This is because the function no_point created a new variable, new_str, and stored the data it was passed into it.
+If the code above is run we will see 2 different memory addresses being printed, aside the same string. This is because the function no_point created a new variable, new_str, and stored the data it was passed into.
 
 Some may ask why isn't the variable, and its location passed to the function? The reason for that is to prevent data from accidentally being overwritten. If a copy is made and returned then there is less of a chance of the original data source to be modified when unwanted.
 
-Here is a way we can utilize pointers to have the function use the same variable we created in the main function
+Here is a way we can utilize pointers to have the function use the same variable we created in the main function.
 
 ### code
 ```go
@@ -59,10 +59,10 @@ func wth_point(*new_str string) {
 
 **<0xc00010a050> This is a test**
 
-The code above is starting to look silmular to what we saw in the 00_Pointers example, however we are pasing the variable through a function.
+The code above is starting to look similar to what we saw in the 00_Pointers example, however we are passing the variable through a function.
 
-Pointers are not something you will always use when writing Go code, however they are important to understand as there will be times they are needed to acheive a softwares end goal.
+Pointers are not something you will always use when writing Go code, however they are important to understand as there will be times they are needed to achieve a softwares end goal.
 
 ## Conclusion
 
-While the use of a pointer can be pretty straight forward, knwoing when to utilize them can make all the difference. Using pointers helps keep the program light weight as it can reduce the amount of memory used by the program, however this introduces problems that can be tricky to track down if one is not paying attention.
+While the use of a pointer can be pretty straight forward, knowing when to utilize them can make all the difference. Using pointers helps keep the program light weight as it can reduce the amount of memory used by the program, however this introduces problems that can be tricky to track down if one is not paying attention.
