@@ -2,21 +2,17 @@
 
 ## Overview
 
-Unit tests can be extremely helpful for making sure code functionality doesn't break while adding or changing features in a program. Testing code is a common thing for programmers to want to do, so the developers of Go have created a way to do that with a built-in package known as "testing". The testing package will contain a majority of the tools we will need for testing our code. This directory will overview some of those tools so you can get to testing your code.
+Unit tests can be extremely an extremly helpful tool for ensuring code's functionality and performance. Due to testing code being common amongst programmers, the developers of Go have created a way to do that with the help of the "testing" package. While this package contains a majority of the tools needed for developers to test their code, it still leaves test cases, and validating output up to the developer. This repository is targeted at explaining how these tools can be used to create efficient ways of checking code.
 
 ## add [</>](https://github.com/Syssos/Learning_Go/blob/main/0x10_Unit_Tests/00_add.go)
 
-This example is a pretty short one, containing a function, Sum, and the main function. We can see that the Sum function takes 2 int arguments and will return an int. The main function is responsible for printing the result of the Sum function to the screen.
-
-While this may seem straightforward there is one thing I would like to point out before moving on. That is the sum function will return a value. This is important with the type of testing the "testing" package allows for.
-
-When using the "testing" package, the main objective is to ensure a specific function is returning values as it should. Testing a function that prints to screen, or doesn't return values is not necessarily desired as there would be a different reason as to why a user wouldn't see output to the screen, which also could mean the code is unable to build.
-
-Usually making sure the output that the user would see like a returned value is more important. Which is where these tests come into play.
+This file contains the code that will be tested in against in the unit tests. Due to how the Golang testing library is configured, we do not have to do anything special to account for the tests when initial writing the code.
 
 ## add_test [</>](https://github.com/Syssos/Learning_Go/blob/main/0x10_Unit_Tests/01_add_test.go)
 
-When creating a test file we want to name it ending in "\_test". The reason for that is because when working within a module or package's folder, we can run ``` go test . ``` and all of the files ending with the test suffix will run. If no errors are found then we should see an output of ``` ok      github.com/Syssos/unit_t        0.001s ```.
+Test file names are denoted by the suffix <b>"_test"</b>. This tells the Go compiler that there are test cases inside of the file to be used while testing. Inside this file you will notice 2 "types" of functions, one starting with the prefix <b>"Test"</b>, the other with the prefix <b>"Benchmark"</b>.
+
+<!-- When creating a test file we want to name it ending in "\_test". The reason for that is because when working within a module or package's folder, we can run ``` go test . ``` and all of the files ending with the test suffix will run. If no errors are found then we should see an output of ``` ok      github.com/Syssos/unit_t        0.001s ```.
 
 Let's now take a look at some things that are happening in this example.
 
@@ -32,7 +28,9 @@ To test for the desired result we essentially created a slice of structs, with t
 
 If you come across certain things that you would like to log, but not flag as an error, you can do so via ``` t.Log() ```. This will log the event but not trigger an error or failed tests.
 
-You may also want to add more details like values to the error message. This can be done similar to how you print values with printf, however in the case of an error you would use ``` t.Errorf() ```
+You may also want to add more details like values to the error message. This can be done similar to how you print values with printf, however in the case of an error you would use ``` t.Errorf() ``` -->
+
+## Running Tests
 
 ## Conclusion
 
