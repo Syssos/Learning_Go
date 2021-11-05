@@ -54,7 +54,7 @@ Concurrency is something that can be greatly benifited from when used in the rig
 
 While there are percs to goroutines there can also be drawbacks if goroutines are used poorly. The example within the benchmark test folder [Dangers with Basic](https://github.com/Syssos/Learning_Go/tree/main/0x11_Concurrency/Benchmarks/Concurrency/DangersWithBasic) shows that when a concurrent approach is attempted, when not needed, there can actually be a harmful impact on the performance of the code.
 
-However when used properly, there can be huge gains in performance, as seen in the benchmark test for [Advanced Example](https://github.com/Syssos/Learning_Go/tree/main/0x11_Concurrency/Benchmarks/AdvancedExampleBenchmark).
+However when used properly, there can be huge gains in performance, as seen in the benchmark test for [Advanced Example](https://github.com/Syssos/Learning_Go/tree/main/0x11_Concurrency/01_Advanced_Example).
 
 ## Sources
 
