@@ -12,11 +12,11 @@ This package includes things such as functionality testings, benchmark testings,
 
 Test files are meant to be part of the package as they can be a vital way to check that none of the codes functionality or performance was impacted when making changes. Each testing file delcared package should be the same as the package the functions desired to test are in.
 
-## add [</>](https://github.com/Syssos/Learning_Go/blob/main/0x10_Unit_Tests/00_add.go)
+## add / dif
 
 This file contains the code that will be tested in against in the unit tests. Due to how the Golang testing library is configured, we do not have to do anything special to account for the tests when initial writing the code.
 
-## add_test [</>](https://github.com/Syssos/Learning_Go/blob/main/0x10_Unit_Tests/01_add_test.go)
+## add_test / dif_test
 
 Test file names are denoted by the suffix "<b>_test</b>". This tells the Go compiler that there are test cases inside of the file to be used while testing. Inside this file you will notice 2 "types" of functions, one starting with the prefix "<b>Test</b>", the other with the prefix "<b>Benchmark</b>".
 
